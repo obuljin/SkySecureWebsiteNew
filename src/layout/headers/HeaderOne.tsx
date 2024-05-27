@@ -50,7 +50,7 @@ const HeaderOne = () => {
                   <Link href="/">
                     <Image
                       src={logoImg}
-                      width={134}
+                      width={154}
                       height={50}
                       alt="flag"
                     />

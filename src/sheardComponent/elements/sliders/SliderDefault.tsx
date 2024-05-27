@@ -91,7 +91,7 @@ const SliderDefault = () => {
                     <div className="row ">
                       <div className="col-xl-8 col-lg-8">
                         <div className="slider-content">
-                          <h1 data-animation="fadeInLeft" data-delay=".3s">
+                          <h1 data-animation="fadeInLeft" data-delay=".3s" style={{ fontSize: '60px', fontWeight: '400' }}>
                             {item.title}
                           </h1>
                           <p data-animation="fadeInLeft" data-delay=".5s">
@@ -124,7 +124,7 @@ const SliderDefault = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-xl-4 col-lg-3 d-none d-lg-block">
+                      {/* <div className="col-xl-4 col-lg-3 d-none d-lg-block">
                         <div className="slider-video text-md-right">
                           <Link
                             href=""
@@ -136,7 +136,7 @@ const SliderDefault = () => {
                             <i className="fas fa-play"></i>
                           </Link>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

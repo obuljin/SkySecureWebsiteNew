@@ -76,13 +76,19 @@ const CourseDefault = () => {
             <div className="project-wrapper">
               <div className="project-img">
                 <Link href="#">
-                  <Image style={{ width: "100%", height: "auto" }} src={item.img} alt="" />
+                  <Image style={{ width: "100%", height: "475px" }} src={item.img} alt="" />
                 </Link>
                 <div className="project-text">
                   {/* <span>{item.title}</span> */}
                   <h3>
                     <Link href="/case-1">{item.title}</Link>
                   </h3>
+                  <Link href={`/service-details/${item.id}`}>
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
                 </div>
               </div>
             </div>

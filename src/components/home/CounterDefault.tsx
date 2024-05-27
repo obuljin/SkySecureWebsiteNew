@@ -30,7 +30,7 @@ const CounterDefault = () => {
     ];
 
     return(
-        <div className="counter-area pt-130 pb-100" style={{ background: "url(assets/img/bg/bg-3.jpg)" }}>
+        <div className="counter-area pt-130 pb-100" style={{ backgroundColor:'#096bd8' }}>
             <div className="container">
                 {counters &&
                 <div className="row turon-counter-content">

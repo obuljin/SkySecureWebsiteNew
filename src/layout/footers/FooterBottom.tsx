@@ -11,18 +11,17 @@ const FooterBottom = () => {
               <div className="col-xl-8 col-lg-8 col-md-8">
                 <div className="copyright">
                   <p>
-                    <i className="far fa-copyright"></i> Copyright 2023 Torun.
-                    All rights reserved.
+                    <i className="far fa-copyright"></i>  2024 Skysecure. All Rights Reserved.
                   </p>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-4">
+              {/* <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="footer-bottem-text text-md-right">
                   <p>
                     Design By <Link href="">Torun</Link>
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

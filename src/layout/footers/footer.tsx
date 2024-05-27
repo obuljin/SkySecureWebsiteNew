@@ -29,9 +29,15 @@ const FooterOne = () => {
                       dolores et quas molestias excepturi{" "} */}
                     </p>
                   </div>
-                  <div className="footer-icon">
+                  {/* <div className="footer-icon">
                     <SocilaLinks />
-                  </div>
+                  </div> */}
+                   <Link href='/'>
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-3 col-md-4">
