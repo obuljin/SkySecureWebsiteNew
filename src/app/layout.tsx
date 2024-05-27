@@ -20,7 +20,7 @@ export default function RootLayout({ children }: childrenType) {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>SkySecure - React Next Js  </title>
+          <title>SkySecure</title>
           <link rel="icon" href="/favicon.ico" />
         </head>
         <body suppressHydrationWarning={true}>

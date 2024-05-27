@@ -134,8 +134,8 @@ const FooterOne = () => {
               <div className="col-xl-3 col-lg-3 col-md-6">
                 <div className="footer-wrapper mb-30">
                   <h4 className="footer-title">Contact Us</h4>
-                  <div className="footer-info">
-                    <p>SKYSECURE TECHNOLOGIES PRIVATE LIMITED</p>
+                  <div className="footer-info mb-2">
+                    <span className="text-left">SKYSECURE TECHNOLOGIES PRIVATE LIMITED</span>
                   </div>
                   <ul className="contact-link">
                     <li>

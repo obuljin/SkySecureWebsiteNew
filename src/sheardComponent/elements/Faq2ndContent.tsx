@@ -1,8 +1,8 @@
 "use client"
-import { faqPageData } from '@/data/faq-page-data';
+import { faqSidePageData } from '@/data/faq-side-data';
 import React, { useState } from 'react';
 
-const FaqContent = () => {
+const Faq2ndContent = () => {
   const [activeItem, setActiveItem] = useState<number>(0);
   const [active, setactive] = useState<boolean>(true);
   const handleAccordionClick = (id: number) => {
@@ -17,7 +17,7 @@ const FaqContent = () => {
       >
         <div className="accodion-style--1" data-wow-delay=".5s">
           <div>
-            {faqPageData?.map((item) => (
+            {faqSidePageData?.map((item) => (
               <div key={item.id} className="accordion-item">
                 <p
                   onClick={() => handleAccordionClick(item.id)}
@@ -50,4 +50,4 @@ const FaqContent = () => {
   );
 };
 
-export default FaqContent;
+export default Faq2ndContent;
