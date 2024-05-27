@@ -27,7 +27,7 @@ export default function RootLayout({ children }: childrenType) {
           <ReduxProvider>
             <AppProvider>{children}</AppProvider>
             <ToastContainer
-              position="top-left"
+              position="top-right"
               autoClose={1000}
               hideProgressBar={false}
               newestOnTop={false}
