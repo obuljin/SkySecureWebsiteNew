@@ -3,19 +3,51 @@ import { contact_schema } from "@/utils/validation-schema";
 import React from "react";
 import { useFormik } from "formik";
 import ErrorMsg from "@/form/ErrorMsg";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
       initialValues: {
-        name: "",
+        fullName: "",
         email: "",
         subject: "",
-        massage: "",
+        message: "",
       },
-      validationSchema: contact_schema,
-      onSubmit: (values, { resetForm }) => {
-        resetForm();
+    validationSchema: contact_schema,
+
+      onSubmit:async (values, { resetForm }) => {
+        try {
+          console.log(values)
+          const api = process.env.NEXT_PUBLIC_API_URL
+          console.log(api)
+          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/form/create`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values), // Assuming values is an object containing data to send
+          });
+          const response_json = await response.json()
+          console.log(response_json);
+          
+         // Check if the request was successful
+         if (response_json.code == 200) {
+           console.log('Data successfully posted');
+           toast.success(response_json.message);
+           resetForm();
+          // Redirect to a new page after successful submission if needed
+         
+         } else {
+          toast.error(response_json.message);
+          console.error('Failed to post data:', response.statusText);
+        }
+        } catch (error) {
+          toast.error("Something is wrong ");
+        console.error('Error posting data:', error);
+      }
+  
       },
     });
 
@@ -40,18 +72,18 @@ const ContactForm = () => {
                   <div className="col-lg-4">
                     <div className="form-box user-icon mb-30">
                       <input
-                        name="name"
-                        value={values.name}
+                        name="fullName"
+                        value={values.fullName}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         type="text"
                         placeholder="Full Name Here"
-                        id="email"
+                        
                       />
                       <span>
                         <i className="fas fa-user"></i>
                       </span>
-                      {touched.name && <ErrorMsg error={errors.name} />}
+                      {touched.fullName && <ErrorMsg error={errors.fullName} />}
                     </div>
                   </div>
                   <div className="col-lg-4">
@@ -63,6 +95,7 @@ const ContactForm = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         placeholder="Email Here"
+                        id="email"
                       />
                       <span>
                         <i className="fas fa-envelope"></i>
@@ -89,11 +122,12 @@ const ContactForm = () => {
                   <div className="col-lg-12">
                     <div className="form-box message-icon mb-30">
                       <textarea
+                        
                         name="message"
                         id="message"
                         cols={30}
                         rows={10}
-                        defaultValue={values.massage}
+                        value={values.message}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         placeholder="Write message"
@@ -101,12 +135,12 @@ const ContactForm = () => {
                       <span>
                         <i className="fas fa-pencil-alt"></i>
                       </span>
-                      {touched.massage && <ErrorMsg error={errors.massage} />}
+                      {touched.message && <ErrorMsg error={errors.message} />}
                     </div>
                     <div className="contact-btn contact-2-btn text-center">
                       <button className="btn" type="submit">
                         <span className="btn-text">
-                          send message{" "}
+                        send message
                           <i className="fas fa-long-arrow-alt-right"> </i>
                         </span>{" "}
                         <span className="btn-border"></span>
