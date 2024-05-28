@@ -6,3 +6,55 @@
 p{
     text-align: justify !important;
 }
+
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .sticky-col {
+      /* position: -webkit-sticky; */
+      position: sticky;
+      top: 120px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 991px) {
+    .sticky-col {
+      position: static;
+    }
+  }
+
+
+  .team-img {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 100px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text{
+    text-align: center;
+    padding:10px 0px;
+  }
+
+  .text h4{
+    color: #096bd8;
+    font-size: 22px;
+  }
+
+  .text span{
+    font-size: 1rem;
+  }
+
+  .team-img img{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }

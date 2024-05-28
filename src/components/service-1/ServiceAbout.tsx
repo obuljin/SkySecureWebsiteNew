@@ -1,6 +1,6 @@
-import AboutFaq from '@/sheardComponent/AboutFaq';
 import React from 'react';
 import ServiceVideo from './ServiceVideo';
+import ServiceFaq from '@/sheardComponent/ServiceFaq';
 
 const ServiceAbout = () => {
     return (
@@ -18,10 +18,10 @@ const ServiceAbout = () => {
                                     <span className="b-sm-left-2"></span>
                                     <span className="sub-t-left">who we are</span>
                                     <h1>Why Most People Choose Our Business Solutions</h1>
-                                    <p>Sedut perspiciatis unde omnis iste natus error sitlupttem accusantium doloremque laudantium totam remap eriaeaque ipsa quae ab illo inventore veritatis </p>
+                                    <p>Skysecure Technologies for its cutting-edge, tailored cybersecurity solutions that cater specifically to the unique challenges and requirements of the manufacturing industry. Our expertise in navigating the complex landscape of IT security ensures operational excellence and resilience against evolving cyber threats. With Skysecure, businesses benefit from:</p>
                                 </div>
                                 <div className="faq-box">
-                                    <AboutFaq />
+                                    <ServiceFaq />
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import imgOne from "../../../public/assets/img/bg/map.png";
+import imgOne from "../../../public/assets/img/service/earth.png";
 import Image from "next/image";
 import ContactFormHomeTwo from "@/form/ContactFormHomeTwo";
 const ContactSection = () => {

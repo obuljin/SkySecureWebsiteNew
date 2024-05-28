@@ -1,10 +1,15 @@
 "use client"
 import React from "react";
-import brandOne from "../../../public/assets/img/brand/brand-01.png";
-import brandTwo from "../../../public/assets/img/brand/brand-02.png";
-import brandThree from "../../../public/assets/img/brand/brand-03.png";
-import brandFour from "../../../public/assets/img/brand/brand-04.png";
-import brandFive from "../../../public/assets/img/brand/brand-05.png";
+import brandOne from "../../../public/assets/img/brand/Bisleri.png";
+import brandTwo from "../../../public/assets/img/brand/Digicomm.png";
+import brandThree from "../../../public/assets/img/brand/Indegene.png";
+import brandFour from "../../../public/assets/img/brand/Mtr.png";
+import brandFive from "../../../public/assets/img/brand/Neelitech.png";
+import brandSix from "../../../public/assets/img/brand/Protiviti.png";
+import brandSeven from "../../../public/assets/img/brand/TMF.png";
+import brandEight from "../../../public/assets/img/brand/Tata Group.png";
+import brandNine from "../../../public/assets/img/brand/Wipro.png";
+import brandTen from "../../../public/assets/img/brand/saraf.png";
 import Image from "next/image";
 import "swiper/css/bundle";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
@@ -34,16 +39,28 @@ const Brand = () => {
     },
     {
       id: 6,
-      logo: brandThree,
+      logo: brandSix,
     },
     {
       id: 7,
-      logo: brandOne,
+      logo: brandSeven,
+    },
+    {
+      id: 8,
+      logo: brandEight,
+    },
+    {
+      id: 9,
+      logo: brandNine,
+    },
+    {
+      id: 10,
+      logo: brandTen,
     },
   ];
 
   return (
-    <div className="brand-area pt-130 pb-130">
+    <div className="brand-area pt-10 pb-10">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -52,6 +69,11 @@ const Brand = () => {
               spaceBetween={30}
               loop={true}
               observeParents={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: true,
+              }}
+              slidesPerView={5}
               observer={true}
               centeredSlides={false}
               breakpoints={{
@@ -79,7 +101,7 @@ const Brand = () => {
               {brandLogos.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="brand-img">
-                    <Image src={item.logo} alt="" />
+                    <Image src={item.logo} alt="" style={{width:'100%', height:'auto'}}/>
                   </div>
                 </SwiperSlide>
               ))}

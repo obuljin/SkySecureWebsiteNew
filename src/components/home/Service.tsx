@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../../../public/assets/img/bg/bg-1.jpg";
+import bgImg from "../../../public/assets/img/service/background.png";
 import Image from "next/image";
 import Link from "next/link";
 import { serviceDataTwo } from "@/data/service-data-two";
@@ -26,12 +26,12 @@ const Service = () => {
               <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30" >
                 <div className="services-wrapper text-center ">
                   <div className="services-img" >
-                    <Image src={item.img} alt="" />
+                    <Image src={item.img} alt={item.title} style={{width:'30%', height:'auto'}}/>
                   </div>
                   <div className="services-text" >
-                    <h3 className="mb-2" style={{height:"45px"}}> {item.title} </h3>
-                    <p className="mt-2" style={{height:"230px"}}> {item.details} </p>
-                    <Link href={`/service-details/${item.id}`}>
+                    <h3> {item.title} </h3>
+                    <p> {item.details.slice(0,180)}... </p>
+                    <Link href={`/service-details/${item.title}`}>
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>

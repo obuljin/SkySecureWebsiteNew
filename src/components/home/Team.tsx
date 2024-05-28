@@ -44,12 +44,12 @@ const Team = () => {
             <div className="row justify-content-center align-items-center">
               {teamData.slice(0,3).map((item) => (
                 <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30 row justify-content-center align-items-center">
-                  <Link href={`/team-details/${item.id}`} className="team-wrapper row justify-content-center align-items-center">
-                    <div className="team-img "  style={{ backgroundColor: '#eaedff' }} >
-                      <Image className="rounded-pill" style={{height:'200px', width:"200px"}} src={item.img} alt="" />
+                  <div className="team-wrapper row justify-content-center align-items-center">
+                    <div className="team-img "  >
+                      <Image className="rounded-pill" height={386} width={300} style={{height:'200px', width:"200px"}} src={item.img} alt="" />
                     </div>
-                    <div className="" style={{height:'150px', width:"300px"}}>
-                      <h4> <Link href={`/team-details/${item.id}`}>{item.name}</Link> </h4>
+                    <div className="text">
+                      <h4> {item.name}</h4>
                       <span> {item.title} </span>
                       {/* <div className="team-icon">
                         <Link href="https://www.facebook.com/">
@@ -67,7 +67,7 @@ const Team = () => {
                       </div> */}
                     </div>
 
-                  </Link>
+                  </div>
 
                 </div>
                 
