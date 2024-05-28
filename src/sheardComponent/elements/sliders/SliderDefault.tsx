@@ -85,7 +85,7 @@ const SliderDefault = () => {
               <div className="single-slider">
                 <div
                   className="slider-height slider-overlay z-1 d-flex align-items-center"
-                  style={{ backgroundImage: `url(${item.bgImg.src})` }}
+                  style={{ backgroundImage: `url(${item.bgImg.src})` , backgroundSize: 'cover', backgroundPosition: 'bottom' , paddingTop:'100px', paddingBottom:'100px'}}
                 >
                   <div className="container">
                     <div className="row ">
