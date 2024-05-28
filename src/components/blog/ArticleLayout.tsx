@@ -19,13 +19,13 @@ const ArticleLayout = () => {
           <div className="postbox__text p-50">
             <div className="post-meta mb-15">
               <span>
-                <i className="fas fa-user"> </i> Soamlia
+                <i className="fas fa-user"> </i> {item.user}
               </span>
               <span>
-                <i className="fas fa-calendar"> </i> 05 Aug 2022
+                <i className="fas fa-calendar"> </i> {item.date}
               </span>
               <span>
-                <i className="fas fa-comments"> </i> (03)
+                <i className="fas fa-comments"> </i>{item.message}
               </span>
             </div>
             <h3 className="blog-title">

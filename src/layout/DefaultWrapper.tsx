@@ -37,7 +37,7 @@ const Wrapper = ({ children }:childrenType) => {
       {(() => {
         switch (pathName) {
           case "/":
-            return <FooterOne/>;
+            return <FooterTwo/>;
           case "/blog":
             return <FooterTwo/>;
           case "/blog":

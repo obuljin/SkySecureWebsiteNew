@@ -6,7 +6,7 @@ import BlogSection from './BlogSection';
 const BlogMain = () => {
     return (
         <>
-            <Breadcrumb pageTitle='Blog'/>
+            <Breadcrumb pageTitle='Blog - SkySecure' pageSmallTitle='Blog'/>
             <BlogSection/>
         </>
     );

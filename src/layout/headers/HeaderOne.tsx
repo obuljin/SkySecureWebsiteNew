@@ -57,9 +57,10 @@ const HeaderOne = () => {
                   </Link>
                 </div>
               </div>
+              
               <div
                 id="right-header"
-                className="col-xl-7 col-lg-7 col-md-4 col-2"
+                className="col-xl-7 col-lg-7 col-md-4 col-2 ml-30 d-flex justify-content-end"
               >
                 
                 {/* <div className="header-button f-right d-none d-xl-block">

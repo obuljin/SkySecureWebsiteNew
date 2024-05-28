@@ -16,11 +16,12 @@ import BlogWidgetTags from "./BlogWidgetTags";
 import BlogWidgetBanner from "./BlogWidgetBanner";
 import Link from "next/link";
 
-interface propsType {
-  singleBlog: blogDataType;
-}
+// interface propsType {
+//   singleBlog: blogDataType;
+// }
 
-const BlogContent = ({ singleBlog }: propsType) => {
+const BlogContent = ({ singleBlog }: any) => {
+  
   return (
     <>
       <div className="blog-area pt-120 pb-80">
@@ -38,21 +39,44 @@ const BlogContent = ({ singleBlog }: propsType) => {
                 <div className="postbox__text bg-none">
                   <div className="post-meta mb-15">
                     <span>
-                      <i className="fas fa-calendar-check"> </i> September 15,
-                      2021{" "}
+                      <i className="fas fa-calendar-check"> </i> {singleBlog.date}{" "}
                     </span>
                     <span>
                       <Link href="#">
-                        <i className="fas fa-user"> </i> Diboli B. Joly
+                        <i className="fas fa-user"> </i>{singleBlog.user}
                       </Link>
                     </span>
                     <span>
                       <Link href="#">
-                        <i className="fas fa-comments"> </i> 23 Comments
+                        <i className="fas fa-comments"> </i>{singleBlog.message}
                       </Link>
                     </span>
                   </div>
-                  <h3 className="blog-title">{singleBlog.title}</h3>
+                  
+                    <div className="mb-5">
+                      <div className="">
+                        {/* <p className="card-text">{singleBlog.subTitle}</p> */}
+                        {singleBlog.discription.map((section) => (
+                          <div key={section.id} className="mb-4">
+                            {section.head && <h3>{section.head}</h3>}
+                            <p >{section.para}</p>
+                            {section.subList.length > 0 && (
+                              <ul className="list-group">
+                                {section.subList.map((subItem, index) => (
+                                  <li key={index} className="mb-3">
+                                    <strong>{subItem.category}</strong>: {subItem.description}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  
+
+
+                  {/* <h3 className="blog-title">{singleBlog.title}</h3>
                   <div className="post-text mb-20">
                     <p>
                     In {`today's`} fast-paced world, effective communication is key. Understanding the needs of others and conveying your message clearly can make all the difference. {`It's`} about more than just words; {`it's`} about connection and collaboration
@@ -77,29 +101,31 @@ const BlogContent = ({ singleBlog }: propsType) => {
                       </p>
                       <footer>- Rosalina Pong</footer>
                     </blockquote>
-                  </div>
-                  <BlogPostRelated />
-                  <BlogPostArrow />
+                  </div> */}
+                  {/* <BlogPostRelated />
+                  <BlogPostArrow /> */}
                 </div>
-                <BlogPostAuthor />
+                {/* <BlogPostAuthor />
                 <BlogPostComments />
-                <BlogCommentsForm />
+                <BlogCommentsForm /> */}
               </article>
             </div>
             <div className="col-lg-4">
-              <BlogWidgetSearch />
+              {/* <BlogWidgetSearch /> */}
               <BlogWidgetAbout />
-              <BlogWidgetFeeds />
+              {/* <BlogWidgetFeeds />
               <BlogWidgetCate />
-              <BlogWidgetSocial />
+              <BlogWidgetSocial /> */}
               
-              <BlogWidgetTags />
-              <BlogWidgetBanner />
+              {/* <BlogWidgetTags />
+              <BlogWidgetBanner /> */}
             </div>
           </div>
         </div>
       </div>
     </>
+
+    
   );
 };
 

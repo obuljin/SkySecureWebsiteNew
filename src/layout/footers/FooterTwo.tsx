@@ -3,11 +3,13 @@ import React from 'react';
 import logoWhite from "../../../public/assets/img/logo/white.png"
 import Image from 'next/image';
 import SocilaLinks from '@/utils/SocilaLinks';
+import footerImg from "../../../public//assets/img/logo/logo.png";
+
 const FooterTwo = () => {
     return (
         <>
-              <footer>
-            <div className="footer-area pt-80" style={{ background: "url(assets/img/bg/bg-7.jpg)" }}>
+              <footer style={{backgroundColor:'#091B29'}}>
+            <div className="footer-area pt-80">
                 <div className="container">
                     <div className="newsletter-bg pb-50 mb-80">
                         <div className="row">
@@ -21,7 +23,7 @@ const FooterTwo = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-6 col-lg-5 mb-30">
+                            <div className="col-xl-3 col-lg-3 mb-30">
                                 <div className="footer-2-icon text-lg-right">
                                     <SocilaLinks/>
                                  </div>
@@ -29,95 +31,177 @@ const FooterTwo = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-xl-5 col-lg-5 col-md-6">
-                            <div className="footer-wrapper footer-2-wrapper mb-30">
-                                <div className="footer-logo">
-                                    <Link href="/"><Image src={logoWhite} alt="" /></Link>
-                                </div>
-                                <div className="footer-text">
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sitluptatem accusantium doloremque laudantium totam rem apereaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                                    <Link className="btn" href="/about"><span className="btn-text">learn more <i className='fas fa-long-arrow-alt-right'> </i></span></Link>
-                                </div>
-
-                            </div>
+              <div className="col-xl-4 col-lg-4 col-md-4">
+                <div className="footer-wrapper footer-2-wrapper mb-30">
+                  <div className="footer-logo">
+                    <Link href="/">
+                      <Image src={logoWhite} alt="flag"  />
+                    </Link>
+                  </div>
+                  <div className="footer-text" >
+                    <p >
+                    With a strong focus on innovation, expertise, and client-centric services, Skysecure stands at the forefront of digital innovation, offering bespoke solutions to businesses globally
+                      {/* At 1vero eoset accusamus et iusto odio dignissimos ducimus
+                      qui blpraesentium voluptatum deleniti atque corrupti quos
+                      dolores et quas molestias excepturi{" "} */}
+                    </p>
+                  </div>
+                  {/* <div className="footer-icon">
+                    <SocilaLinks />
+                  </div> */}
+                  <Link className="btn" href="/about"><span className="btn-text">learn more <i className='fas fa-long-arrow-alt-right'> </i></span></Link>
+                </div>
+              </div>
+              <div className="col-xl-2 col-lg-2 col-md-4">
+                <div className="footer-wrapper footer-2-wrapper mb-30">
+                  <h4 className="footer-title">Our Services</h4>
+                  <ul className="fotter-menu" >
+                    <li>
+                      <Link href="/service-1" >Commercial Marketplace</Link>
+                    </li>
+                    <li>
+                      <Link href="/service-1">Solution Implementation</Link>
+                    </li>
+                    <li>
+                      <Link href="/service-1">Assessment</Link>
+                    </li>
+                    <li>
+                      <Link href="/service-1" >Simplified Management</Link>
+                    </li>
+                    <li>
+                      <Link href="/service-1" >Security & Compliance Metrics</Link>
+                    </li>
+                    <li>
+                      <Link href="/service-1" >Operational Excellence</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-4 ml-10">
+                <div className="footer-wrapper footer-2-wrapper mb-30">
+                  <h4 className="footer-title" >Quick Links</h4>
+                  <ul className="fotter-menu">
+                    {/* <li>
+                      <Link href="/about">About Us</Link>
+                    </li> */}
+                    <li>
+                      <Link href="/goals">Need a Consultant?</Link>
+                    </li>
+                    {/* <li>
+                      <Link href="/service-1">Our Services</Link>
+                    </li> */}
+                    <li>
+                      <Link href="/faq">Have Any Questions?</Link>
+                    </li>
+                    {/* <li>
+                      <Link href="/team">Meet Our Team</Link>
+                    </li> */}
+                    {/* <li>
+                      <Link href="/contact">Contact Us</Link>
+                    </li> */}
+                  </ul>
+                  <h4 className="footer-title footer-2-wrapper mt-3" >Terms & Conditions</h4>
+                  <ul className="fotter-menu">
+                    <li>
+                      <Link href="/terms-of-use" >Terms of Use</Link>
+                    </li>
+                    <li>
+                      <Link href="/data-privacy">Privacy</Link>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </div>
+              {/* <div className="col-xl-3 col-lg-3 col-md-6">
+                <div className="footer-wrapper mb-30">
+                  <h4 className="footer-title">Recent News</h4>
+                  <div className="footer-news">
+                    <ul>
+                      <li>
+                        <div className="footer-news-img">
+                          <Link href="/blog">
+                            <Image src={imgOne} alt="" />
+                          </Link>
                         </div>
-                        <div className="col-xl-2 col-lg-2 col-md-6">
-                            <div className="footer-wrapper footer-2-wrapper mb-30">
-                                <h4 className="footer-title">Our Services</h4>
-                                <ul className="fotter-menu">
-                                    <li><Link href="/service-1">User Strategy</Link></li>
-                                    <li><Link href="/service-1">Product Designing</Link></li>
-                                    <li><Link href="/service-1">Marketing Strategy</Link></li>
-                                    <li><Link href="/service-1">IT  </Link></li>
-                                    <li><Link href="/service-1">Server Security</Link></li>
-                                    <li><Link href="/service-1">Product Marketing</Link></li>
-								</ul>
-                            </div>
+                        <div className="footer-news-text">
+                          <h5>
+                            <Link href="/blog">
+                              Building Real Time Charts With Grap HQL & Postgres
+                            </Link>
+                          </h5>
                         </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6">
-                            <div className="footer-wrapper footer-2-wrapper mb-30 pl-50">
-                                <h4 className="footer-title">Quick Links</h4>
-                                <ul className="fotter-menu">
-                                    <li><Link href="/about">About Us</Link></li>
-                                    <li><Link href="/goals">Need a Consultant?</Link></li>
-                                    <li><Link href="/service-1">Our Services</Link></li>
-                                    <li><Link href="/faq">Have Any Questions?</Link></li>
-                                    <li><Link href="/team">Meet Our Team</Link></li>
-                                    <li><Link href="/contact">Contact Us</Link></li>
-								</ul>
-                            </div>
+                      </li>
+                      <li>
+                        <div className="footer-news-img">
+                          <Link href="/blog">
+                            <Image src={imgTow} alt="" />
+                          </Link>
                         </div>
-                        <div className="col-xl-2 col-lg-2 col-md-6">
-                            <div className="footer-wrapper footer-2-wrapper mb-30">
-                                <h4 className="footer-title">Contact Us</h4>
-                                <div className="footer-info">
-                                    <p>But I must explain to you
-                                        how all this mistaken</p>
-                                </div>
-                                <ul className="contact-link"> 
-                                    <li>
-                                        <div className="contact-address-icon">
-                                            <i className="fas fa-phone"></i>
-                                        </div>
-                                        <div className="contact-address-text">
-                                            <h4><Link href="tel:+81234578988" target='_blank'>+812  (345) 778 88</Link></h4>
-                                            
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="contact-address-icon">
-                                            <i className="fas fa-envelope-open"></i>
-                                        </div>
-                                        <div className="contact-address-text">
-                                            <h4> <Link href="mailto:support@gmail.com" target='_blank'>support@gmail.com</Link> </h4>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="contact-address-icon">
-                                            <i className="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div className="contact-address-text">
-                                            <h4> <Link href="#">227 Marion Street, Columbia</Link> </h4>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="footer-news-text">
+                          <h5>
+                            <Link href="/blog">
+                              How To Build An Endless Runner Or Virtual Reality
+                            </Link>
+                          </h5>
                         </div>
-                    </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> */}
+              <div className="col-xl-2 col-lg-2 col-md-6">
+                <div className="footer-wrapper footer-2-wrapper mb-30">
+                  <h4 className="footer-title" >Contact Us</h4>
+                  <div className="footer-info">
+                    <p>SKYSECURE TECHNOLOGIES PRIVATE LIMITED</p>
+                  </div>
+                  <ul className="contact-link">
+                    <li>
+                      <div className="contact-address-icon">
+                        <i className="fas fa-phone"></i>
+                      </div>
+                      <div className="contact-address-text">
+                        <Link href="tel:+088889797697" target="_blank">
+                        (+91) 73533 55526
+                        </Link>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="contact-address-icon">
+                        <i className="fas fa-envelope-open"></i>
+                      </div>
+                      <div className="contact-address-text">
+                        <Link href="mailto:support@gmail.com" target="_blank">
+                        sales@skysecuretech.com
+                        </Link>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="contact-address-icon">
+                        <i className="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div className="contact-address-text">
+                        <Link href="">AGR Plaza, 6/1, Bellandur, Bengaluru, Karnataka-560103</Link>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
                 </div>
                 <div className="footer-bottom-area footer-2-bottom mt-50 pb-25 pt-25">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-8 col-lg-8 col-md-8">
                                 <div className="copyright">
-                                    <p><i className="far fa-copyright"></i> Copyright 2023 <Link href="#">Torun</Link>. All rights reserved.</p>
+                                    <p><i className="far fa-copyright"></i> 2024 Skysecure. All Rights Reserved.</p>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-lg-4 col-md-4">
+                            {/* <div className="col-xl-4 col-lg-4 col-md-4">
                                 <div className="footer-bottem-text text-md-right">
                                     <p>Design By <Link href="#">BDevs</Link></p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
