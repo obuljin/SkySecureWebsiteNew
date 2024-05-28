@@ -33,9 +33,9 @@ const BlogSection = () => {
               <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
-                  <h3 className="widget-title">About Me</h3>
+                  <h3 className="widget-title">Recente Posts</h3>
                 </div>
-                <div className="about-me text-center">
+                {/* <div className="about-me text-center">
                   <Image src={imgOne} alt="" />
                   <h4>Zulia Maron Duo</h4>
                   <p>
@@ -45,10 +45,25 @@ const BlogSection = () => {
                   <div className="widget-social-icon">
                     <SocilaLinks/>
                   </div>
+                </div> */}
+                <div>
+                  A Guide To IT Security Transformation In Manufacturing
+                </div>
+                <hr className="my-4" style={{backgroundColor:"black",height:'2px'}}/>
+                <div>
+                  Threat Protection With Microsoft Azure Sentinel
                 </div>
               </div>
-
               <div className="widget mb-40">
+                <div className="widget-title-box mb-30">
+                  <span className="animate-border"></span>
+                  <h3 className="widget-title">Recente Comments</h3>
+                </div>
+                
+                
+              </div>
+
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Popular Feeds</h3>
@@ -72,8 +87,8 @@ const BlogSection = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
+              </div> */}
+{/* 
               <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
@@ -106,8 +121,8 @@ const BlogSection = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div className="widget mb-40">
+              </div> */}
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Social Profile</h3>
@@ -143,7 +158,7 @@ const BlogSection = () => {
                     <Image src={thumbOne} alt="" />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

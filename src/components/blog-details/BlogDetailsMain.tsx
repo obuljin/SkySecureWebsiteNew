@@ -5,13 +5,14 @@ import React from "react";
 import BlogContent from "./BlogContent";
 import { blogData } from "@/data/blog-data";
 
-const BlogDetailsMain = ({ id }: idType) => {
-  const fillterData: blogDataType | any = blogData.find(
+const BlogDetailsMain = ({ id }: any) => {
+  const fillterData: any = blogData.find(
     (item) => item.id == id
   );
+  console.log("data",fillterData)
   return (
     <>
-      <Breadcrumb pageTitle={fillterData?.title} />
+      <Breadcrumb pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} />
       <BlogContent singleBlog={fillterData}/>
     </>
   );
