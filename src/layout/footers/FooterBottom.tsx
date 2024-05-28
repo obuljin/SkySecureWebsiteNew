@@ -11,7 +11,8 @@ const FooterBottom = () => {
               <div className="col-xl-8 col-lg-8 col-md-8">
                 <div className="copyright">
                   <p>
-                    <i className="far fa-copyright"></i>  2024 Skysecure. All Rights Reserved.
+                    <i className="far fa-copyright"></i> Copyright {new Date().getFullYear()} Skysecure.
+                    All rights reserved.
                   </p>
                 </div>
               </div>

@@ -7,26 +7,28 @@ const ContactArea = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-4 col-lg-4 col-md-4">
-                                <div className="contact text-center mb-30" style={{ background: "url(assets/img/bg/contact-bg.png)" }}>
+                                <div className="contact text-center mb-30" style={{ backgroundColor: '#333333' }}>    {/*style={{ background: "url(assets/img/bg/contact-bg.png)"}} */}
                                     <i className='fas fa-envelope-open'> </i>
                                     <h3>Mail Here</h3>
-                                    <p>support@gmail.com</p>
-                                    <p>www.infotorun.net</p>
+                                    <p>sales@skysecuretech.com</p>
+                                    <p>www.skysecuretech.com</p>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-4">
-                                <div className="contact text-center mb-30"  style={{ background: "url(assets/img/bg/contact-bg.png)" }}>
+                                <div className="contact text-center mb-30" style={{ backgroundColor: '#333333' }}>
                                     <i className='fas fa-map-marker-alt'> </i>
-                                    <h3>Visit Here</h3>
-                                    <p>27 Division St, New York, NY 10002, Jaklina, United Kingpung</p>
+                                    <h3>Corporate Office Address</h3>
+                                    <p>AGR Plaza, 6/1, 3rd floor, Bellandur, Bengaluru, Karnataka-560103.</p>
                                 </div>
                             </div>
                             <div className="col-xl-4  col-lg-4 col-md-4 ">
-                                <div className="contact text-center mb-30" style={{ background: "url(assets/img/bg/contact-bg.png)" }}>
+                                <div className="contact text-center mb-30" style={{ backgroundColor: '#333333' }}>
                                     <i className='fas fa-phone'> </i>
-                                    <h3>Call Us Now</h3>
-                                    <p>+8 (123) 985 789</p>
-                                    <p>+787 878897 87</p>
+                                <h3>Call Us Now</h3>
+                               
+                                <p>+ (91) 73533 55526</p>
+                                <p>&nbsp;</p> 
+                             
                                 </div>
                             </div>
                         </div>

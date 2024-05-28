@@ -3,26 +3,30 @@ export interface serviceManageDataType{
     id:number;
     title:string;
     class:string;
+    icon: string;
     details:string;
 }
 
 export const serviceManageData: serviceManageDataType[] = [
     {
         id: 1,
-        title: "Web Development",
+        title: "Commercial Marketplace",
         class: "single-services text-center",
-        details: "Our Web Development services focus on creating dynamic and responsive websites tailored to your business needs. We utilize the latest technologies and industry best practices to deliver high-quality web solutions that engage your audience and drive results."
+        icon: 'fal fa-cart-arrow-down',
+        details: "facilitiates the purchase of IT solutions from top OEMs, streamlining tech acquisition for businesses worldwide, with innovation at its core."
     },
     {
         id: 2,
-        title: "Database Analysis",
+        title: "Professional Services",
         class: "single-services active text-center",
-        details: "Our Database Analysis services involve in-depth examination and optimization of your database systems. We analyze data structures, performance metrics, and query optimization to ensure efficient data storage, retrieval, and management, enhancing "
+        icon: 'fal fa-users',
+        details: "offers comprehensive consulting, seamless implementation, and meticulous managed services to optimize and secure your business operations."
     },
     {
         id: 3,
-        title: "Server Security",
+        title: "Value Added Services",
         class: "single-services text-center",
-        details: "Server Security is paramount in today's digital landscape. Our Server Security services focus on implementing robust security measures to safeguard your servers from cyber threats and unauthorized access. We employ encryption, access control,"
+        icon: 'fal fa-diamond',
+        details: "transcends traditional services by offering automation and cyber insurance, adding unparalleled value and protection in today’s digital risk landscape."
     },
 ];

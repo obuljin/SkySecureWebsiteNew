@@ -6,8 +6,8 @@ import Courses from './Courses';
 const CareerMain = () => {
     return (
         <>
-            <Breadcrumb pageTitle='Career'/>
-            <Categories/>
+            <Breadcrumb pageTitle='Career - Skysecure' pageSmallTitle='Career'/>
+            {/* <Categories/> */}
             <Courses/>
         </>
     );

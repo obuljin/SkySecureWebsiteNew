@@ -18,10 +18,10 @@ export const blog_schema = Yup.object().shape({
 
 // contact_schema
 export const contact_schema = Yup.object().shape({
-  name: Yup.string().required().label("Name"),
+  fullName: Yup.string().required().label("Fullname"),
   email: Yup.string().required().email().label("Email"),
-  subject: Yup.string().required().email().label("Subject"),
-  message: Yup.string().required().min(20).label("Message")
+  subject: Yup.string().required().label("Subject"),
+  message: Yup.string().required().min(5).label("Message")
 });
 export const comment_schema = Yup.object().shape({
   name: Yup.string().required().label("Name"),

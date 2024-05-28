@@ -6,7 +6,7 @@ import AboutSection from '../home-two/AboutSection';
 const FaqMain = () => {
     return (
         <>
-            <Breadcrumb pageTitle='FAQ’s'/>
+            <Breadcrumb pageTitle='FAQ - Skysecure' pageSmallTitle='FAQ’s'/>
             <ChoseAreaFaq/>
             <Cta/>
             <AboutSection/>

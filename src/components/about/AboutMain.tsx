@@ -11,7 +11,7 @@ import CtaTwo from "@/sheardComponent/CtaTwo";
 const AboutMain = () => {
   return (
     <>
-      <Breadcrumb pageTitle="About Us" />
+      <Breadcrumb pageTitle="About - SkySecure" pageSmallTitle= "About"/>
       <AboutArea />
       <AboutService />
       <ChoseArea />

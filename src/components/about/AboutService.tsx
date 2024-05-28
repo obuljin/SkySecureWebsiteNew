@@ -18,7 +18,7 @@ const AboutService = () => {
               <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className={item.class}>
                   <div className="services-icon">
-                    <i className="fas fa-laptop-code"> </i>
+                    <i className={item?.icon}> </i>
                   </div>
                   <div className="services-text">
                     <h3> {item.title} </h3>
