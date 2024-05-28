@@ -6,3 +6,20 @@
 p{
     text-align: justify !important;
 }
+
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .sticky-col {
+      /* position: -webkit-sticky; */
+      position: sticky;
+      top: 120px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 991px) {
+    .sticky-col {
+      position: static;
+    }
+  }

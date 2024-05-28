@@ -8,7 +8,7 @@ import Brand from '../home/Brand';
 const ServiceMain = () => {
     return (
         <>
-            <Breadcrumb pageTitle='Service One'/>
+            <Breadcrumb pageTitle='Services - Skysecure' pageSmallTitle='Services'/>
             <ServiceAbout/>
             <Service/>
             <ContactSection/>
