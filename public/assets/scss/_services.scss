@@ -4,7 +4,7 @@
 }
 .services-wrapper {
 	background: $white;
-	padding: 60px 40px 60px 41px;
+	padding: 30px 40px 60px 41px;
 	border-radius: 10px;
 }
 .about-img {
@@ -26,6 +26,7 @@
     & h3{
         font-family: $c_sem;
         font-size: 24px;
+		height: 55px;
         margin-top:23px;
         margin-bottom: 21px;
     }

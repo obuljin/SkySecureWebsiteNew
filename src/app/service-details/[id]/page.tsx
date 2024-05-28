@@ -3,13 +3,14 @@ import Wrapper from "@/layout/DefaultWrapper";
 import Breadcrumb from "@/sheardComponent/Breadcrumb";
 import React from "react";
 
-const page = ({ params }: { params: { id: number } }) => {
-  const id = params.id;
+const page = ({ params }: { params: { id: string } }) => {
+
+  const id = decodeURIComponent(params.id);
   return (
     <>
       <Wrapper>
         <main>
-        <Breadcrumb pageTitle="Service Details"/>
+        <Breadcrumb pageTitle={`${id} - SkySecure`} pageSmallTitle={id}/>
           <ServiceDetailsMain id={id} />
         </main>
       </Wrapper>
