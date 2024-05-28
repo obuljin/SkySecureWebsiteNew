@@ -20,7 +20,7 @@ const HomeMain = () => {
            <About/>
            <Service/>
            <Team/>
-           <Cta/>
+           {/* <Cta/> */}
            <Project/>
            <Testimonial/>
            <CounterDefault/>
@@ -28,7 +28,7 @@ const HomeMain = () => {
            <Contact/>
            <BlogGrid/>
            <Brand/>
-           <Newsletter/>
+           {/* <Newsletter/> */}
         </>
     );
 };

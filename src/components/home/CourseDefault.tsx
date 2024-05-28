@@ -53,13 +53,13 @@ const CourseDefault = () => {
         centeredSlides={false}
         breakpoints={{
           768: {
-            slidesPerView: 1.5,
+            slidesPerView: 2,
           },
           992: {
             slidesPerView: 2,
           },
           1400: {
-            slidesPerView: 2.5,
+            slidesPerView: 2,
           },
           1700: {
             slidesPerView: 3,

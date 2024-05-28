@@ -44,7 +44,8 @@ const TestimonialDefault = () => {
       <div className="testimonial-area">
         <Swiper
           modules={[Scrollbar, A11y, Autoplay, Navigation]}
-          spaceBetween={0}
+          spaceBetween={20}
+          slidesPerView={1}
           loop={true}
           observeParents={true}
           observer={true}

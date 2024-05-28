@@ -1,5 +1,5 @@
 import React from 'react';
-import thumb from "../../../public/assets/img/testimonial/test.png"
+import thumb from "../../../public/assets/img/testimonial/Testimonial 1 (1).png"
 import Image from 'next/image';
 import TestimonialDefault from './TestimonialDefault';
 const Testimonial = () => {
@@ -18,8 +18,8 @@ const Testimonial = () => {
                          <TestimonialDefault/>
                     </div>
                     <div className="col-xl-6 col-lg-6 mb-30">
-                        <div className="testimonial-img">
-                            <Image  style={{ width: "100%", height: "auto" }} src={thumb} alt="testimonial" />
+                        <div className="testimonial-img d-flex justify-content-center">
+                            <Image  src={thumb} alt="testimonial" />
                         </div>
                     </div>
                 </div>
