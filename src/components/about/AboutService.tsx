@@ -25,7 +25,7 @@ const AboutService = () => {
                     <p>
                        {item?.details}
                     </p>
-                    <Link href={`/service-manage/${item.id}`}>
+                    <Link href='/services'>
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>
