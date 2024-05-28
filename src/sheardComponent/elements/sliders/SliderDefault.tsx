@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Scrollbar, A11y, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import bgOne from "../../../../public/assets/img/slider/slider-1.jpg";
+import bgOne from "../../../../public/assets/img/banner/banner.png";
 import bgTwo from "../../../../public/assets/img/slider/slider-2.jpg";
 import bgFour from "../../../../public/assets/img/slider/slider-4.jpg";
 import bgFive from "../../../../public/assets/img/slider/slider-5.jpg";
