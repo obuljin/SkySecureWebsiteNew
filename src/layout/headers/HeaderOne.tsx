@@ -53,6 +53,7 @@ const HeaderOne = () => {
                       width={222}
                       height={60}
                       alt="flag"
+                      style={{ width: "100%", height: "50px" }}
                     />
                   </Link>
                 </div>
@@ -62,19 +63,19 @@ const HeaderOne = () => {
                 id="right-header"
                 className="col-xl-7 col-lg-7 col-md-4 col-2 ml-30 d-flex justify-content-end"
               >
-                
-                {/* <div className="header-button f-right d-none d-xl-block">
+{/*                 
+                <div className="header-button f-right d-none d-xl-block">
                   <Link className="btn" href="/goals">
                     <span className="btn-text">
                       Consultancy{" "}
                       <i className="fas fa-long-arrow-alt-right"></i>
                     </span>
                   </Link>
-                </div>
+                </div> */}
                 <div className="header-button f-right d-lg-block">
                   <div className="bd-header__right d-flex align-items-center justify-content-end">
                     <div className="bd-action__cart-list">
-                      <div className="bd-action__item">
+                      {/* <div className="bd-action__item">
                         <div className="bd-action__cart">
                           <div
                             className="bd-action__cart-icon"
@@ -103,7 +104,7 @@ const HeaderOne = () => {
                             </span>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="d-inline-block d-xl-none  text-right">
                         <div className="menu-bar">
                           <button className="bars" onClick={toggleSideMenu}>
@@ -113,7 +114,7 @@ const HeaderOne = () => {
                       </div>
                     </div>
                   </div>
-                </div> */}
+                </div>
 
                 <div className="main-menu text-right d-none d-xl-block">
                   <nav id="mobile-menu">
