@@ -3,7 +3,6 @@ import Breadcrumb from '@/sheardComponent/Breadcrumb';
 import React from 'react';
 import CaseDeailsContent from './CaseDeailsContent';
 import { casesData } from '@/data/case-data';
-import CaseStadiesTwo from '../case-2/CaseStadiesTwo';
 import Brand from '../home/Brand';
 
 const CaseDetailsMain = ({id}:idType) => {

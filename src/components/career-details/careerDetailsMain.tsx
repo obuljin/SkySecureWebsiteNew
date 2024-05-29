@@ -2,7 +2,6 @@ import { idType } from '@/interFace/interFace';
 import Breadcrumb from '@/sheardComponent/Breadcrumb';
 import React from 'react';
 import { casesData } from '@/data/case-data';
-import CaseStadiesTwo from '../case-2/CaseStadiesTwo';
 import Brand from '../home/Brand';
 import { courseData } from '@/data/courseData';
 import CareerDetailsContent from './careerContentDetails';

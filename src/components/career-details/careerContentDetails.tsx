@@ -31,8 +31,8 @@ const CareerDetailsContent = ({ data }: propsType) => {
                                         <p className="text-black" style={{ fontSize: "15px" }}>{data?.details}</p>
 
                                         {data?.data?.map((e: {
-                                            sub_desc: ReactNode; title: string, data: Array<{ desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }> 
-}, i: number) => (
+                                            sub_desc: ReactNode; title: string, data: Array<{ desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }>
+                                        }, i: number) => (
                                             <React.Fragment key={i}>
                                                 <p className="mb-3 text-black" style={{ fontWeight: "900", fontSize: "28px" }}>{e.title}</p>
                                                 <span style={{ fontSize: "15px" }}>{e.sub_desc}</span>
@@ -54,6 +54,9 @@ const CareerDetailsContent = ({ data }: propsType) => {
                                                 </ul>
                                             </React.Fragment>
                                         ))}
+                                    </div>
+                                    <div className="about-button text-center">
+                                        <Link className="btn" href="/contact"><span className="btn-text">Apply <i className='fas fa-long-arrow-alt-right'></i></span></Link>
                                     </div>
                                 </div>
                             </div>
