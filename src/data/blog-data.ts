@@ -1,9 +1,9 @@
 import { blogDataType } from "@/interFace/interFace"
-import thumbOne from "../../public/assets/img/blog/blog-1.jpg"
-import thumbTwo from "../../public/assets/img/blog/blog-4.jpg"
+
 import thumbThree from "../../public/assets/img/blog/blog-5.jpg"
 import blogOne from "../../public/assets/img/blog/blog-1.jpg";
-import blogTwo from "../../public/assets/img/blog/blog-2.jpg";
+import thumbOne from "../../public/assets/img/blog/b1.jpg"
+import thumbTwo from "../../public/assets/img/blog/b2.jpg"
 import blogThree from "../../public/assets/img/blog/blog-3.jpg";
 
 
