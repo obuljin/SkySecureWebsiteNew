@@ -100,14 +100,14 @@ const CourseDefault = () => {
         ))}
       </Swiper>
 
-      <div className="bd-trending__navigations">
+      {/* <div className="bd-trending__navigations">
         <button className="case-button-prev banner-button-prev slick-arrow">
           <i className="fa-regular fa-angle-left"></i>
         </button>
         <button className="case-button-next banner-button-next slick-arrow">
           <i className="fa-regular fa-angle-right"></i>
         </button>
-      </div>
+      </div> */}
       
     </>
   );
