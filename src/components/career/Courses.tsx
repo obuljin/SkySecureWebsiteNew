@@ -8,6 +8,17 @@ const Courses = () => {
       title: "Cloud Security Engineer",
       subTitle: "Full Time",
       details: "This role involves designing, implementing, and maintaining security protocols and policies to protect against unauthorized access, data breaches, and other cyber threats. And work with cloud services like Azure to ensure robust, secure cloud environments.",
+      data: [
+        {
+          id: 1,
+          data: [
+            {
+              id: 1,
+              desc: "Introduction With the rise of cybersecurity threats, organizations need a reliable and efficient way to detect and respond to potential security breaches. Microsoft Azure Sentinel is a cloud-native security information and event management (SIEM) system that provides advanced threat protection by collecting and analyzing data from various sources. This white paper will provide an overview.",
+            }
+          ]
+        }
+      ],
     },
     {
       id: 2,
