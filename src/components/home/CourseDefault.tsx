@@ -88,7 +88,7 @@ const CourseDefault = () => {
                   </h3>
                   <div className="bolg-top-button mt-2" >
                     <Link className="btn"  href={`/case-details/${item.title}`}>
-                      <span className="btn-text">
+                      <span className="btn-text" style={{color:'white'}}>
                         READ MORE <i className="fas fa-long-arrow-alt-right"></i>
                       </span>
                     </Link>
