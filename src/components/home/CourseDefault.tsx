@@ -86,12 +86,19 @@ const CourseDefault = () => {
                   <h3>
                     <Link href={`/case-details/${item.title}`}>{item.title}</Link>
                   </h3>
-                  <Link href={`/case-details/${item.title}`}>
+                  <div className="bolg-top-button mt-2" >
+                    <Link className="btn"  href={`/case-details/${item.title}`}>
+                      <span className="btn-text">
+                        READ MORE <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
+                  {/* <Link href={`/case-details/${item.title}`}>
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>
                       </span>
-                    </Link>
+                    </Link> */}
                 </div>
               </div>
             </div>
