@@ -138,7 +138,79 @@ export const casesData = [
             desc:'Manufacturers are increasingly utilizing big data analytics for actionable insights and optimization. Protecting the confidentiality and integrity of large datasets becomes critical. Employ encryption for data at rest and in transit, implement strong access controls, and conduct regular vulnerability assessments of big data platforms.',
           }
         ]
+      },
+      {
+        id:3,
+        title:'Key Outcomes to Expect',
+        data:[{
+          id:1,
+          desc:'IT Security transformation has a wider impact on the business where it yields several key results that drive operational efficiency, innovation, and business growth. Here are some of the key results to expect:',
+
+        },
+      {
+        id:2,
+        desc:'IT transformation enables the streamlining and optimization of manufacturing processes through automation, data integration, and real-time monitoring. This leads to increased operational efficiency, reduced costs, improved productivity, and faster time-to-market for products.',
+        sub_heading:'Process Optimization:'
+      },
+      {
+        id:3,
+        desc:'IT transformation fosters innovation by providing access to advanced technologies like additive manufacturing (3D printing), augmented reality (AR), virtual reality (VR), and artificial intelligence (AI). Manufacturers can introduce new product designs, create personalized customer experiences, and respond quickly to market demands, thereby gaining a competitive edge.',
+        sub_heading:'Increased Innovation and Customization:'
+      },
+      {
+        id:4,
+        desc:'IT transformation equips manufacturers with the agility and resilience needed to navigate disruptions and market uncertainties. with advanced security and yet',
+        sub_heading:'Secure Productive Enterprise:'
+      },
+      {
+        id:5,
+        desc:'not compromise user experience, manufacturers can establish a safe and secure operating environment for a variety of business users across the organization.',
+        
+      },
+      {
+        id:6,
+        desc:' IT transformation fosters collaboration among employees and departments through digital platforms, virtual communication tools, and knowledge-sharing systems. This leads to increased productivity, innovation, and employee satisfaction.',
+        sub_heading:'Enhanced Employee Collaboration and Empowerment:'
+      },
+      {
+        id:7,
+        desc:' IT transformation facilitates secure customer engagement channels. This enables manufacturers to provide personalized, yet secure experiences, gather customer feedback, and build long-term customer relationships based on trust and collaboration.',
+        sub_heading:'Enhanced Customer Engagement:'
+      },
+      {
+        id:8,
+        desc:'Digital transformation promotes sustainability in manufacturing by optimizing resource usage, reducing waste, and minimizing the environmental impact. IoT sensors and analytics can monitor energy consumption, enable predictive maintenance to',
+        sub_heading:'Sustainable Manufacturing Practices:'
+      },
+      {
+        id:9,
+        desc:'reduce downtime and support sustainable practices throughout the production lifecycle.',
+   
+      },
+      {
+        id:9,
+        sub_heading:'Enhanced Product Quality:',
+        desc:'By leveraging digital technologies such as sensors, data analytics, and machine learning, manufacturers can gain deeper insights into their production processes. This allows for better quality control, early detection of defects, and predictive maintenance, resulting in higher product quality and customer satisfaction.'
+      }
+    ]
+      },
+      {
+        id:4,
+        title:'A Trusted Partner for your IT Security Transformation',
+        data:[{
+          id:1,
+          desc:'Skysecure brings expertise and experience in cybersecurity, specifically tailored to the unique challenges and requirements of the manufacturing industry. We have helped several manufacturing businesses like yours to seamlessly transform their IT Security Operations to be future-ready.'
+        },
+        {
+          id:2,
+          desc:'By partnering with us, you can leverage our team’s expertise and industry knowledge to strengthen your IT security transformation and achieve operational excellence. With our guidance and solutions, you can enhance your cybersecurity posture, protect critical assets and data, and mitigate the risks associated with evolving cyber threats.'
+        },
+        {
+          id:3,
+          desc:'When you are ready, we are just a call away. Contact us to learn more.'
+        }]
       }
     ],
   },
+
 ]
