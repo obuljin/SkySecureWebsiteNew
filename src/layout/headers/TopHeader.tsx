@@ -8,7 +8,7 @@ const TopHeader = () => {
         <>
             <div className="header-top-area grey-bg d-none d-md-block">
             <div className="container">
-                <div className="row">
+                <div className="row pt-2 pb-2">
                     <div className="col-xl-8 col-lg-8 col-md-6 d-flex align-items-center">
                         <div className="header-info">
                             <span className=''><i className='far fa-map-marker-alt'></i>6/1, Bellandur, Bengaluru.</span>
@@ -17,7 +17,7 @@ const TopHeader = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6">
-                        <div className="header-right f-right">
+                        {/* <div className="header-right f-right"> */}
                             {/* <div className="header-lang  pos-rel f-right">
                                 <div className="lang-icon">
                                     <Link className='lang-icon-img' href="/">
@@ -32,13 +32,13 @@ const TopHeader = () => {
                                     <li><Link href="#">AU</Link></li>
                                 </ul>
                             </div> */}
-                            <div className="header-icon f-right">
-                                {/* <Link href="https://www.linkedin.com/company/skysecure-technologies/" target='_blank'><i className='fab fa-facebok-f'></i></Link> */}
+                            <div className="header-icon f-right d-flex" style={{gap:'20px'}}>
                                 <Link href="https://twitter.com/SkysecureT?t=eIQh6SBZr52JEPj57ntPWw&amp;s=09/" target='_blank'><i className='fab fa-twitter'></i></Link>
                                 <Link href="https://www.instagram.com/skysecuretech?igsh=ZmgxdjIzZ2JjcGhw" target='_blank'><i className='fab fa-instagram'></i></Link>
                                 <Link href="https://www.youtube.com/channel/UCdCps8R7SdXhW3YQnE6tsyg" target='_blank'><i className='fab fa-youtube'></i></Link>
+                                <Link href="https://www.linkedin.com/company/skysecure-technologies/" target='_blank'><i className='fab fa-linkedin'></i></Link>
                             </div>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

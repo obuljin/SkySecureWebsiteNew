@@ -18,7 +18,7 @@ const BlogGrid = () => {
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-4 mb-30">
-            <div className="bolg-top-button text-md-right mt-90">
+            <div className="bolg-top-button text-md-right mt-90 " style={{ textAlign: "right" }}>
               <Link className="btn" href="/blog">
                 <span className="btn-text">
                   view all News <i className="fas fa-long-arrow-alt-right"></i>
@@ -28,8 +28,7 @@ const BlogGrid = () => {
           </div>
         </div>
         <div className="row">
-           {
-            blogDataTwo.slice(3,4).map((item)=>(
+           {blogDataTwo.slice(0,2).map((item)=>(
               <div key={item.id} className="col-xl-4 col-lg-4 col-md-12 mb-30">
             <div className="blog-wrapper">
               <div className="blog-img">
@@ -40,15 +39,15 @@ const BlogGrid = () => {
               <div className="blog-meta">
                 <span>
                   {" "}
-                  <i className="fas fa-user"> </i> Soamlia
+                  <i className="fas fa-user"> </i> {item.user}
                 </span>
                 <span>
                   {" "}
-                  <i className="fas fa-calendar"> </i> 05 Aug 2019
+                  <i className="fas fa-calendar"> </i> {item.date}
                 </span>
                 <span>
                   {" "}
-                  <i className="fas fa-comments"> </i> (03)
+                  <i className="fas fa-comments"> </i> {item.message}
                 </span>
               </div>
               <div className="blog-text">
@@ -68,12 +67,11 @@ const BlogGrid = () => {
               </div>
             </div>
           </div>
-            ))
-           }
+            ))}
           <div className="col-xl-8 col-lg-8">
             
 
-            {
+            {/* {
               blogDataTwo.slice(4,6).map((item)=>(
                 <div key={item.id} className="blog-border mb-30">
               <div className="row">
@@ -115,7 +113,7 @@ const BlogGrid = () => {
               </div>
             </div>
               ))
-            }
+            } */}
             
           </div>
         </div>
