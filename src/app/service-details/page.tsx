@@ -9,7 +9,7 @@ const page = () => {
     <>
       <Wrapper>
         <main>
-          <Breadcrumb pageTitle="Service Details"/>
+          <Breadcrumb pageTitle="Service Details" pageSmallTitle="Service Details"/>
           <ServiceDetailsMain id={id} />
         </main>
       </Wrapper>

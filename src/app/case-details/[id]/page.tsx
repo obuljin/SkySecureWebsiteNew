@@ -3,7 +3,8 @@ import Wrapper from '@/layout/DefaultWrapper';
 import React from 'react';
 
 const dynamicCaseDetailsPage = ({ params }: { params: { id: string } }) => {
-    const id = params.id
+    const id = decodeURIComponent(params.id)
+
     return (
         <>
              <Wrapper>
