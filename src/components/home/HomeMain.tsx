@@ -12,6 +12,7 @@ import Contact from './Contact';
 import BlogGrid from './Blog';
 import Brand from './Brand';
 import Newsletter from './Newsletter';
+import FullTeam from '../team/FullTeam';
 
 const HomeMain = () => {
     return (

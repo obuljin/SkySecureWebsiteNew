@@ -39,7 +39,7 @@ const ContactFormEbook = () => {
             const pdfUrl = "/assets/ebook.pdf"
             const link = document.createElement('a');
             link.href = pdfUrl;
-            link.download = 'ebook.pdf';
+            link.download = 'Skysecure Microsoft DPDP eBook.pdf';
             link.click();
             toast.success(response_json.message)
             console.log("Success download")
@@ -58,11 +58,11 @@ const ContactFormEbook = () => {
     });
   return (
     <>
-      <div className="container border border-dark">
+      <div className="container">
         <form id="appointment-form" onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-lg-6">
-              <div className="form-box user-icon mb-20">
+            <div className="col-lg-6 " >
+              <div className="form-box user-icon mb-20 bg-white">
                 <input
                   name="firstName"
                   value={values.firstName}
@@ -78,7 +78,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box user-icon mb-20">
+              <div className="form-box user-icon mb-20 bg-white">
                 <input
                   name="lastName"
                   value={values.lastName}
@@ -94,7 +94,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box email-icon mb-20">
+              <div className="form-box email-icon mb-20 bg-white">
                 <input
                   type="email"
                   name="official_email"
@@ -110,7 +110,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box date-icon mb-20">
+              <div className="form-box date-icon mb-20 bg-white">
                 <input
                   type="number"
                   name="phone_number"
@@ -126,7 +126,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box date-icon mb-20">
+              <div className="form-box date-icon mb-20 bg-white">
                 <input
                   type="text"
                   name="company"
@@ -142,7 +142,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box date-icon mb-20">
+              <div className="form-box date-icon mb-20 bg-white">
                 <input
                   type="text"
                   name="job_title"
@@ -158,7 +158,7 @@ const ContactFormEbook = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="form-box date-icon mb-20">
+              <div className="form-box date-icon mb-20 bg-white">
                 <input
                   type="text"
                   name="country"
@@ -173,15 +173,18 @@ const ContactFormEbook = () => {
                 {touched.country && <ErrorMsg error={errors.country} />}
               </div>
             </div>
+
             <div className="col-lg-12">
               <p>By submitting this form, you agree to Skysecure & its affiliates contacting you with this and other information. You may unsubscribe at any time</p>
               <div className="row align-items-center">
-                <div className="col-lg-1 col-md-1 col-sm-1 col-2">
+                <div className="col-lg-1 col-md-1 col-sm-1 col-2 ">
                   <input
+                    className=""
                     type="checkbox"
                     name="condition"
                     placeholder="Country"
                     required
+                    style={{ width: '20px', height: '20px' }}
                   />
 
                 </div>
@@ -189,6 +192,25 @@ const ContactFormEbook = () => {
 
 
               </div>
+              {/* <div className="row align-items-center">
+                <div className="form-box col-lg-1 col-md-1 col-sm-1 col-2">
+                  <input
+                    className=""
+                    type="checkbox"
+                    id="terms-and-conditions"
+                    name="terms_and_conditions"
+                    required
+                    style={{ width: '20px', height: '20px' }}
+                  />
+                </div>
+                <div className="col-lg-10 col-md-10 col-sm-10 col-10">
+                  <label className="form-check-label " htmlFor="terms-and-conditions">
+                    I agree to Skysecure's Terms & Conditions
+                  </label>
+                </div>
+              </div> */}
+
+
 
               <div className="contact-btn">
                 <button className="btn" type="submit">
