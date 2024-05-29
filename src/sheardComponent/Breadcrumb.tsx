@@ -11,7 +11,7 @@ interface propsType {
 const Breadcrumb = ({ pageTitle, pageSmallTitle , backgroundImage}: propsType) => {
 
 	return (
-		<div className="breadcrumb-area pt-150 pb-150" style={{ background: `${backgroundImage? backgroundImage : "url(assets/img/bg/breadcrumb.png)"}`, backgroundAttachment: "fixed", backgroundPosition: 'center', backgroundSize: 'cover' }}>
+		<div className="breadcrumb-area pt-150 pb-150" style={{ background: `${backgroundImage? `url(${backgroundImage})` : "url(assets/img/bg/breadcrumb.png)"}`, backgroundAttachment: "fixed", backgroundPosition: 'center', backgroundSize: 'cover' }}>
 			<div className="container">
 				<div className="row">
 					<div className="col-xl-12">
