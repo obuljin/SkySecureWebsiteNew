@@ -8,9 +8,10 @@ import Brand from '../home/Brand';
 
 const CaseDetailsMain = ({id}:idType) => {
     const filerData = casesData.find((item)=>item.id == id)
+    const pageSmallTitle = filerData ? filerData.title : '';
     return (
         <>
-            <Breadcrumb pageTitle='Case Details'/>
+            <Breadcrumb pageTitle='Case Details' pageSmallTitle={pageSmallTitle}/>
             <CaseDeailsContent data={filerData}/>
             <CaseStadiesTwo/>
             <Brand/>

@@ -10,7 +10,7 @@ const page = ({ params }: { params: { id: string } }) => {
     <>
       <Wrapper>
         <main>
-        <Breadcrumb pageTitle={`${id} - SkySecure`} pageSmallTitle={id}/>
+        <Breadcrumb pageTitle={`${id} - SkySecure`} pageSmallTitle={id} backgroundImage=""/>
           <ServiceDetailsMain id={id} />
         </main>
       </Wrapper>
