@@ -1,14 +1,14 @@
-import ContactMain from '@/components/contact/ContactMain';
 import Wrapper from '@/layout/DefaultWrapper';
 import React from 'react';
+import EbookMain from '@/components/e-book/EbookMain';
 
 const Ebook = () => {
     return (
         <>
             <Wrapper>
                 <main>
-                    {/* <ContactMain/> */}
-                    <div>E-book</div>
+                   <EbookMain/>
+                    {/* <div>E-book</div> */}
                 </main>
             </Wrapper>
         </>
