@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import logoWhite from "../../../public/assets/img/logo/white.png"
 import Image from 'next/image';
+import footerLogo from "../../../public/assets/img/logo/footerLogo.png"
 import SocilaLinks from '@/utils/SocilaLinks';
 import footerImg from "../../../public//assets/img/logo/logo.png";
 
@@ -35,7 +36,7 @@ const FooterTwo = () => {
                 <div className="footer-wrapper footer-2-wrapper mb-30">
                   <div className="footer-logo">
                     <Link href="/">
-                      <Image src={logoWhite} alt="flag"  />
+                      <Image src={footerLogo} alt="flag" style={{height:'80px',width:'250px'}} />
                     </Link>
                   </div>
                   <div className="footer-text" >
