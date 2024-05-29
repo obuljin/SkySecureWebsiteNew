@@ -84,9 +84,9 @@ const CourseDefault = () => {
                 <div className="project-text">
                   {/* <span>{item.title}</span> */}
                   <h3>
-                    <Link href="/case-1">{item.title}</Link>
+                    <Link href={`/case-details/${item.title}`}>{item.title}</Link>
                   </h3>
-                  <Link href={`/service-details/${item.id}`}>
+                  <Link href={`/case-details/${item.title}`}>
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>

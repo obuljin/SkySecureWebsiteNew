@@ -7,14 +7,12 @@ import CaseStadiesTwo from '../case-2/CaseStadiesTwo';
 import Brand from '../home/Brand';
 
 const CaseDetailsMain = ({id}:idType) => {
-    const filerData = casesData.find((item)=>item.id == id)
+    const filerData = casesData.find((item)=>item.title == id)
     const pageSmallTitle = filerData ? filerData.title : '';
     return (
         <>
-            <Breadcrumb pageTitle='Case Details' pageSmallTitle={pageSmallTitle}/>
+            <Breadcrumb pageTitle={`${filerData?.title} - SkySecure`} pageSmallTitle={pageSmallTitle}/>
             <CaseDeailsContent data={filerData}/>
-            <CaseStadiesTwo/>
-            <Brand/>
         </>
     );
 };

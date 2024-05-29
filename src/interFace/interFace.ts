@@ -101,6 +101,7 @@ export interface caseDataType{
   subText?: string;
   details: string;
   img: StaticImageData;
+  data: string;
   tag?: string;
 }
 export interface teamDataType{
