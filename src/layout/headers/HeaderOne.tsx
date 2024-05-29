@@ -44,7 +44,7 @@ const HeaderOne = () => {
         {pathName !== "/home-2" && <TopHeader />}
         <div id="sticky-header" className="main-menu-area">
           <div className="container">
-            <div className="row align-items-center">
+            <div className="row align-items-center justify-content-between">
               <div className="col-xl-3 col-lg-3 col-md-6 col-8 d-flex align-items-center">
                 <div className="logo">
                   <Link href="/">
