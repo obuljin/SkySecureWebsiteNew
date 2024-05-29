@@ -1,9 +1,9 @@
 "use client";
 import { blogDataType, idType } from "@/interFace/interFace";
-import Breadcrumb from "@/sheardComponent/Breadcrumb";
 import React from "react";
 import BlogContent from "./BlogContent";
 import { blogData } from "@/data/blog-data";
+import BreadcrumbWithImage from "@/sheardComponent/BreadCrumbWithImage";
 
 const BlogDetailsMain = ({ id }: any) => {
   const fillterData: any = blogData.find(
@@ -12,7 +12,7 @@ const BlogDetailsMain = ({ id }: any) => {
   console.log("data",fillterData)
   return (
     <>
-      <Breadcrumb pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} />
+      <BreadcrumbWithImage pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} backgroundImage=""/>
       <BlogContent singleBlog={fillterData}/>
     </>
   );

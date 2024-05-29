@@ -4,13 +4,14 @@ import { serviceDataTwo } from "@/data/service-data-two";
 
 interface propsType {
 	pageTitle: string,
-	pageSmallTitle: string
+	pageSmallTitle: string,
+    backgroundImage: string
 }
 
-const Breadcrumb = ({ pageTitle, pageSmallTitle }: propsType) => {
+const BreadcrumbWithImage = ({ pageTitle, pageSmallTitle , backgroundImage}: propsType) => {
 
 	return (
-		<div className="breadcrumb-area pt-150 pb-150" style={{ background: "url(/assets/img/bg/breadcrumb.png)", backgroundAttachment: "fixed", backgroundPosition: 'center', backgroundSize: 'cover' }}>
+		<div className="breadcrumb-area pt-150 pb-150" style={{ background: `${backgroundImage? `url(${backgroundImage})` : "url(assets/img/bg/breadcrumb.png)"}`, backgroundAttachment: "fixed", backgroundPosition: 'center', backgroundSize: 'cover' }}>
 			<div className="container">
 				<div className="row">
 					<div className="col-xl-12">
@@ -33,7 +34,7 @@ const Breadcrumb = ({ pageTitle, pageSmallTitle }: propsType) => {
 	);
 }
 
-export default Breadcrumb;
+export default BreadcrumbWithImage;
 
 
 
