@@ -12,7 +12,8 @@ const BlogDetailsMain = ({ id }: any) => {
   console.log("data",fillterData)
   return (
     <>
-      <BreadcrumbWithImage pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} backgroundImage=""/>
+      {/* <BreadcrumbWithImage pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} backgroundImage=""/> */}
+      <BreadcrumbWithImage pageTitle={fillterData?.title} pageSmallTitle={fillterData?.title} backgroundImage='assets/img/blog/Blog.png' backgroundcolor='#0A1C2A'/>
       <BlogContent singleBlog={fillterData}/>
     </>
   );
