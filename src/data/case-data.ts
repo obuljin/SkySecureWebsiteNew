@@ -9,6 +9,8 @@ import imgSeven from "../../public/assets/img/project/ga-03.jpg";
 import imgEight from "../../public/assets/img/project/ga-04.jpg";
 import imgNine from "../../public/assets/img/project/ga-05.jpg";
 import imgTen from "../../public/assets/img/project/ga-06.jpg";
+import thumbOne from "../../public/assets/img/project/01.jpg";
+import thumbTwo from "../../public/assets/img/project/02.jpg";
 
 export const casesData:caseDataType[] = [
     {
@@ -17,7 +19,7 @@ export const casesData:caseDataType[] = [
         titleTwo:"Software Development",
         subText:"IT Management",
         details:"Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quaeas",
-        img:ImgOne,
+        img:thumbOne,
     },
     {
         id:2,
@@ -25,7 +27,7 @@ export const casesData:caseDataType[] = [
         titleTwo:"Software Development",
         subText:"Database System",
         details:"Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quaeas",
-        img:ImgThree,
+        img:thumbTwo,
     },
     {
         id:3,

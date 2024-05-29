@@ -33,7 +33,7 @@ const CounterDefault = () => {
         <div className="counter-area pt-130 pb-100" style={{ backgroundColor:'#096bd8' }}>
             <div className="container">
                 {counters &&
-                <div className="row turon-counter-content">
+                <div className="row turon-counter-content ">
                     {counters.map( (item, num) => (
                     <div key={num} className="col-xl-3 col-lg-3 col-md-6">
                         <div className="counter-wrapper mb-30">

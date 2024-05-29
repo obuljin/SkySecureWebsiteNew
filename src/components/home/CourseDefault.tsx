@@ -8,45 +8,48 @@ import thumbOne from "../../../public/assets/img/project/01.jpg";
 import thumbTwo from "../../../public/assets/img/project/02.jpg";
 import thumbThree from "../../../public/assets/img/project/03.jpg";
 import Image from "next/image";
+import { casesData } from "@/data/case-data";
+
 
 const CourseDefault = () => {
-  const casesData = [
-    {
-      id: 1,
-      img: thumbOne,
-      title:'Threat Protection with Microsoft Azure Sentinel'
-    },
-    {
-      id: 2,
-      img: thumbTwo,
-      title:'A Guide to IT Security Transformation in Manufacturing'
-    },
-    // {
-    //   id: 3,
-    //   img: thumbThree,
-    //   title:''
-    // },
-    // {
-    //   id: 4,
-    //   img: thumbOne,
-    //   title:''
-    // },
-    // {
-    //   id: 5,
-    //   img: thumbTwo,
-    // },
-    // {
-    //   id: 6,
-    //   img: thumbThree,
-    //   title:''
-    // },
-  ];
+  // const casesData = [
+  //   {
+  //     id: 1,
+  //     img: thumbOne,
+  //     title:'Threat Protection with Microsoft Azure Sentinel'
+  //   },
+  //   {
+  //     id: 2,
+  //     img: thumbTwo,
+  //     title:'A Guide to IT Security Transformation in Manufacturing'
+  //   },
+  //   // {
+  //   //   id: 3,
+  //   //   img: thumbThree,
+  //   //   title:''
+  //   // },
+  //   // {
+  //   //   id: 4,
+  //   //   img: thumbOne,
+  //   //   title:''
+  //   // },
+  //   // {
+  //   //   id: 5,
+  //   //   img: thumbTwo,
+  //   // },
+  //   // {
+  //   //   id: 6,
+  //   //   img: thumbThree,
+  //   //   title:''
+  //   // },
+  // ];
 
   return (
     <>
       <Swiper
         modules={[Navigation, Scrollbar, A11y, Autoplay]}
         spaceBetween={30}
+        slidesPerView={2}
         loop={true}
         observeParents={true}
         observer={true}
@@ -70,8 +73,8 @@ const CourseDefault = () => {
           prevEl: ".case-button-prev",
         }}
       >
-        {casesData.map((item) => (
-          <SwiperSlide key={item.id}>
+        {casesData.map((item ,i) => (
+          <SwiperSlide key={i}>
              <div  className="col-12">
             <div className="project-wrapper">
               <div className="project-img">
