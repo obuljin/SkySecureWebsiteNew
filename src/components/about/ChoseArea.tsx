@@ -6,7 +6,7 @@ import AboutVideo from './AboutVideo';
 const ChoseArea = () => {
     return (
         <>
-             <div className="choose-area pt-130 pb-130" style={{ background: "url(assets/img/bg/bg-15.jpg)" }}>
+             <div className="choose-area pt-130 pb-130" style={{ background: "url(assets/img/about/bg-15.jpg)" }}>
                     <div className="choose-bg">
                         <div className="container">
                             <div className="row px-5">

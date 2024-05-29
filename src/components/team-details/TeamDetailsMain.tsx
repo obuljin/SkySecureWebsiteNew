@@ -9,11 +9,12 @@ import Cta from '../home/Cta';
 
 const TeamDetailsMain = ({id}:idType) => {
     const filterData = teamData.find((item)=> item.id == id)
+    const pageSmallTitle = filterData ? filterData.name : '';
     return (
         <>
-            <Breadcrumb pageTitle='Team Details'/>
+            <Breadcrumb pageTitle='Team Details' pageSmallTitle={pageSmallTitle}/>
             <SingleTeam filterData={filterData}/>
-            <PersonalSkills/>
+            <PersonalSkills/> 
             <Experience/>
             <Cta/>
         </>

@@ -56,7 +56,7 @@ const BlogContent = ({ singleBlog }: any) => {
                     <div className="mb-5">
                       <div className="">
                         {/* <p className="card-text">{singleBlog.subTitle}</p> */}
-                        {singleBlog.discription.map((section) => (
+                        {singleBlog.discription.map((section: { id: React.Key | null | undefined; head: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; para: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; subList: any[]; }) => (
                           <div key={section.id} className="mb-4">
                             {section.head && <h3>{section.head}</h3>}
                             <p >{section.para}</p>

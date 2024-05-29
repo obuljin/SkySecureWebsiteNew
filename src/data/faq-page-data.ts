@@ -36,4 +36,19 @@ export const faqPageData: faqInterFace[] = [
     title: "Can I purchase cybersecurity solutions for a specific industry or compliance standard?",
     details:"Certainly. We offer solutions tailored to specific industries and compliance requirements, such as healthcare (HIPAA), finance (PCI DSS), and general data protection (GDPR), among others"
   },
+  {
+    id: 8,
+    title: "Are your services suitable for small businesses?",
+    details:"Yes, our cybersecurity services are scalable and customizable to meet the needs and budgets of businesses of all sizes. We work with small, medium, and large enterprises to provide effective cybersecurity solutions."
+  },
+  {
+    id: 9,
+    title: "How experienced is your team?",
+    details:"Our team comprises highly experienced cybersecurity professionals with expertise in various domains, including ethical hacking, risk assessment, compliance, and incident response. We stay up-to-date with the latest threats and trends to offer cutting-edge solutions"
+  },
+  {
+    id: 10,
+    title: "Do you offer compliance and regulatory consulting services?	",
+    details:"Yes, we provide compliance and regulatory consulting services to help you meet industry-specific cybersecurity requirements. We can assist with HIPAA, PCI DSS, GDPR, and other regulatory frameworks"
+  },
 ];

@@ -5,7 +5,7 @@ import Cta from "../home/Cta";
 const TeamMain = () => {
   return (
     <>
-      <Breadcrumb pageTitle="Team" />
+      <Breadcrumb pageTitle="Team" pageSmallTitle="Team" />
       <FullTeam />
       <Cta/>
     </>

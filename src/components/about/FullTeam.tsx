@@ -3,7 +3,7 @@ import bgImg from "../../../public/assets/img/shape/shape-1.png"
 import Image from "next/image";
 import Link from "next/link";
 import { teamData } from "@/data/team-data";
-const Team = () => {
+const FullTeam = () => {
 
 
   return (
@@ -42,7 +42,7 @@ const Team = () => {
           </div> 
           <div className="container">
             <div className="row justify-content-center align-items-center">
-              {teamData.slice(0,2).map((item) => (
+              {teamData.slice(0,3).map((item) => (
                 <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30 row justify-content-center align-items-center">
                   <div className="team-wrapper row justify-content-center align-items-center">
                     <div className="team-img "  >
@@ -81,4 +81,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default FullTeam;

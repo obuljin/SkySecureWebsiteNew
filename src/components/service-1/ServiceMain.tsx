@@ -2,7 +2,7 @@ import Breadcrumb from '@/sheardComponent/Breadcrumb';
 import React from 'react';
 import ServiceAbout from './ServiceAbout';
 import Service from '../home/Service';
-import ContactSection from '../home-two/ContactSection';
+// import ContactSection from '../home-two/ContactSection';
 import Brand from '../home/Brand';
 
 const ServiceMain = () => {
@@ -11,7 +11,7 @@ const ServiceMain = () => {
             <Breadcrumb pageTitle='Services - Skysecure' pageSmallTitle='Services'/>
             <ServiceAbout/>
             <Service/>
-            <ContactSection/>
+            {/* <ContactSection/> */}
             <Brand/>
         </>
     );
