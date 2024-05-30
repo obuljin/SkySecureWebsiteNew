@@ -446,7 +446,7 @@ const TermsContent = () => {
   ];
 
   return (
-    <div className="container mt-md-5 ml-md-5 mr-md-5 mb-md-5 mb-0 m-sm-3">
+    <div className="container terms pt-30 pb-30">
       <strong>
         By accessing and using the site, you agree to these terms of use
       </strong>
