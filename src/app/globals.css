@@ -59,8 +59,8 @@ p{
     box-shadow: none;
   }
 
-  .privacy p {
-    font-family: 'cerebri_sanssemibold' !important;
+  .privacy{
+    text-align: justify !important;
   }
   .privacy ul li {
     font-weight: 400 !important;
@@ -70,9 +70,12 @@ p{
     font-family: 'cerebri_sanssemibold' !important;
   }
   .career_detail ul li {
-    font-family: '"cerebri_sansbold' !important;
+    font-family: 'cerebri_sansbold' !important;
   }
 
+  .terms{
+    text-align: justify !important;
+  }
   .terms p {
     margin-bottom: 0px !important;
     font-weight: 100 !important;

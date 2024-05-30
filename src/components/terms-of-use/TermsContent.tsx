@@ -462,7 +462,7 @@ const TermsContent = () => {
         <div key={eachObj.id} className=" row mt-md-3 mt-0">
           <h5>{eachObj.head}</h5>
           {eachObj.data.map((eachData) => (
-            <div key={eachData.id} className="ml-md-4 ml-0">
+            <div key={eachData.id} className="pl-30">
               <p>{eachData.para}</p>
               {eachData.subData &&
                 eachData.subData.map((subObj) => (
