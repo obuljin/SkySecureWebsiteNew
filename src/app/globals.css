@@ -58,3 +58,19 @@ p{
     border-radius: 0;
     box-shadow: none;
   }
+
+  .privacy p {
+    font-family: 'cerebri_sanssemibold' !important;
+  }
+  .privacy ul li {
+    font-family: "Karla", Sans-serif !important;
+    font-weight: 400 !important;
+  }
+
+  .career_detail p {
+    font-family: 'cerebri_sanssemibold' !important;
+  }
+  .career_detail ul li {
+    font-family: "Karla", Sans-serif !important;
+    font-weight: 400 !important;
+  }

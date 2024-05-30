@@ -11,7 +11,7 @@ interface propsType {
 const CareerDetailsContent = ({ data }: propsType) => {
     return (
         <>
-            <div className="case-details-area pt-30">
+            <div className="case-details-area pt-30 career_detail">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">

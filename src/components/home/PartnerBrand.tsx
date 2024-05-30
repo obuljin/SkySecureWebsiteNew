@@ -73,7 +73,6 @@ const PartnerBrand = () => {
                         <Swiper
                             modules={[Navigation, Scrollbar, A11y, Autoplay]}
                             spaceBetween={30}
-                            loop={true}
                             observeParents={true}
                             autoplay={{
                                 delay: 3000,
