@@ -43,7 +43,7 @@ const BreadcrumbWithImage = ({ pageTitle, pageSmallTitle , backgroundImage,backg
 		<div 
 		className="breadcrumb-area pt-150 pb-150" 
 		style={{ 
-			position: 'relative', // Ensure the container is positioned relatively
+			position: 'relative', 
 			background: `url(${backgroundImage ? backgroundImage : "assets/img/bg/breadcrumb.png"})`, 
 			backgroundAttachment: "fixed", 
 			backgroundPosition: 'center', 
