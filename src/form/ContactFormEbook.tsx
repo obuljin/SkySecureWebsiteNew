@@ -174,10 +174,10 @@ const ContactFormEbook = () => {
               </div>
             </div>
 
-            <div className="col-lg-12">
+            <div className="col-lg-12 ">
               <p>By submitting this form, you agree to Skysecure & its affiliates contacting you with this and other information. You may unsubscribe at any time</p>
-              <div className="row align-items-center">
-                <div className="col-lg-1 col-md-1 col-sm-1 col-2 ">
+              <div className="row align-items-center mb-20">
+                <div className="">
                   <input
                     className=""
                     type="checkbox"
@@ -186,9 +186,9 @@ const ContactFormEbook = () => {
                     required
                     style={{ width: '20px', height: '20px' }}
                   />
-
+                  <span>&nbsp;&nbsp;</span> Yes, I would like to be contacted by email.
                 </div>
-                <div className="col-lg-10 col-md-10 col-sm-10 col-10">Yes, I would like to be contacted by email.</div>
+
 
 
               </div>
