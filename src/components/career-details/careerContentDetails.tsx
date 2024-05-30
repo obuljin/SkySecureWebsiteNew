@@ -24,8 +24,8 @@ const CareerDetailsContent = ({ data }: propsType) => {
                   />
                 </div>
               </div> */}
-                            <div className="row">
-                                <div className="col-xl-12 col-lg-12 mb-30">
+                            <div className="row pl-30 pr-30 pt-10 pb-10">
+                                <div className="col-xl-12 col-lg-12">
                                     <div className="case-details-text">
                                         <h1> {data?.title} </h1>
                                         <p className="text-black" style={{ fontSize: "15px" }}>{data?.details}</p>
@@ -34,11 +34,11 @@ const CareerDetailsContent = ({ data }: propsType) => {
                                             sub_desc: ReactNode; title: string, data: Array<{ desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }>
                                         }, i: number) => (
                                             <React.Fragment key={i}>
-                                                <p className="mb-3 text-black" style={{ fontWeight: "900", fontSize: "28px" }}>{e.title}</p>
+                                                <p className="mb-0 text-black pt-10 pb-10" style={{ fontWeight: "900", fontSize: "28px" }}>{e.title}</p>
                                                 <span style={{ fontSize: "15px" }}>{e.sub_desc}</span>
                                                 <ul>
                                                     {e.data.map((item: { desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined, sub_data?: Array<{ desc: string }> }, j: number) => (
-                                                        <li key={j} className="mb-3" style={{ listStyleType: "disc" }}>
+                                                        <li key={j} className="mb-1" style={{ listStyleType: "disc" }}>
                                                             {item.desc}
                                                             {item.sub_data && (
                                                                 <ul className="mb-2" style={{ marginLeft: "20px" }}>
