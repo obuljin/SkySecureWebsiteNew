@@ -63,7 +63,6 @@ p{
     font-family: 'cerebri_sanssemibold' !important;
   }
   .privacy ul li {
-    font-family: "Karla", Sans-serif !important;
     font-weight: 400 !important;
   }
 
@@ -71,6 +70,13 @@ p{
     font-family: 'cerebri_sanssemibold' !important;
   }
   .career_detail ul li {
-    font-family: "Karla", Sans-serif !important;
+    font-family: '"cerebri_sansbold' !important;
+  }
+
+  .terms p {
+    margin-bottom: 0px !important;
+    font-weight: 100 !important;
+  }
+  .terms ul li {
     font-weight: 400 !important;
   }

@@ -2,7 +2,7 @@
 import React from 'react';
 
 const TermsContent = () => {
-    const obj=[
+    const obj = [
         {
             "id": 1,
             "head": "1. Definitions",
@@ -48,11 +48,11 @@ const TermsContent = () => {
                 {
                     "id": 6,
                     "para": "6. You must not use any Skysecure services:",
-                    subData:[
+                    subData: [
                         { id: 1, para: "In any way that causes, or is likely to cause, Skysecure, or any access to it to be interrupted, damaged or impaired in any way, or" },
                         { id: 2, para: "For fraudulent purposes, or in connection with a criminal offence or other unlawful activity, or" },
                         { id: 3, para: "Threatens the unity, integrity, defence, security or sovereignty of India, friendly relations with foreign states, or public order or causes incitement to the commission of any cognizable offence or prevents investigation of any offence or is insulting any other nation." }
-                      ]
+                    ]
                 },
                 {
                     "id": 7,
@@ -97,11 +97,11 @@ const TermsContent = () => {
                 {
                     "id": 1,
                     "para": "1. Access to the registration area on this site is permitted on the basis that:.",
-                    subData:[
+                    subData: [
                         { id: 1, para: "Your Email Id and password are personal to you and may not be used by anyone else to access this site;" },
                         { id: 2, para: "You will not do anything which would assist anyone who is not a registered user to gain access to any registration area of this site;" },
                         { id: 3, para: "You do not create additional registration accounts to abuse the functionality of the site, or other users; nor do you seek to pass yourself off as another user." }
-                      ]
+                    ]
                 },
                 {
                     "id": 2,
@@ -224,10 +224,10 @@ const TermsContent = () => {
                 {
                     "id": 5,
                     "para": "5. You undertake that:",
-                    subData:[
+                    subData: [
                         { id: 1, para: "All details you provide to us to purchase goods or services offered on our web site are correct and the user accepts that full liability for orders placed using a valid user-id and password lies with you and not Skysecure." },
                         { id: 2, para: "The credit or debit card you use to purchase from us is your own card or your company’s card, that you are authorised to use it, and that there are sufficient funds or credit facilities to cover the cost of any goods or services you order from us. We reserve the right to obtain validation of your credit or debit card details before providing you with any goods or services." }
-                      ]
+                    ]
                 },
                 {
                     "id": 6,
@@ -322,12 +322,12 @@ const TermsContent = () => {
                 {
                     "id": 3,
                     "para": "3. While availing any of the payment method/s available on the Platform, we will not be responsible or assume any liability, whatsoever in respect of any loss or damage arising directly or indirectly to you due to:",
-                    subData:[
+                    subData: [
                         { id: 1, para: "Lack of authorization for any transaction/s, or" },
                         { id: 2, para: "Exceeding the limit mutually agreed by You and between 'Bank/s', or" },
                         { id: 3, para: "Any payment issues arising out of the transaction, or" },
                         { id: 4, para: "Decline of transaction for any other reason/s." }
-                      ]
+                    ]
                 },
                 { id: 4, para: "4. Before shipping / delivering your order to you, Seller may request you to provide supporting documents (including but not limited to Govt. issued ID and address proof) to establish the ownership of the payment instrument used by you for your purchase. This is done in the interest of providing a safe online shopping environment to Our Users." },
                 { id: 5, para: "5. You have specifically authorized Skysecure or its service providers to collect, process, facilitate and remit payments and/or the Transaction Price electronically or through Cash on Delivery to and from other Users in respect of transactions through Payment Facility." },
@@ -343,46 +343,47 @@ const TermsContent = () => {
             id: 13,
             head: '13. Product Specifications',
             data: [
-              { id: 1, para: '1. Skysecure makes every effort to supply the goods as advertised but reserves the right to supply the goods subject to minor variations in actual dimensions and specifications where these are changed by the manufacturer.' },
-              { id: 2, para: '2. Unless expressly indicated otherwise, Skysecure is not the manufacturer of the products and services sold on this website. While we work to ensure that product information on our website is correct, actual product packaging and materials may contain more and different information to that displayed on our website. All information about the products on our website is provided for information purposes only. We recommend that you do not rely solely on the information presented on our website. Please always read labels, warnings and directions provided with the product before use.' }
+                { id: 1, para: '1. Skysecure makes every effort to supply the goods as advertised but reserves the right to supply the goods subject to minor variations in actual dimensions and specifications where these are changed by the manufacturer.' },
+                { id: 2, para: '2. Unless expressly indicated otherwise, Skysecure is not the manufacturer of the products and services sold on this website. While we work to ensure that product information on our website is correct, actual product packaging and materials may contain more and different information to that displayed on our website. All information about the products on our website is provided for information purposes only. We recommend that you do not rely solely on the information presented on our website. Please always read labels, warnings and directions provided with the product before use.' }
             ]
-          },
-          {
+        },
+        {
             id: 14,
             head: '14. Usage of User Info',
             data: [
-              { id: 1, para: '1. Skysecure will communicate with the User via SMS, internet-based messaging services like WhatsApp, voice call, email, or any other alternate communication method the User provided at the time of order to confirm the demo request, cancellation, payment confirmation, refund status, schedule change, or any other information pertinent to the transaction or booking made by the User.' },
-              { id: 2, para: '2. Skysecure may also get in touch with the User using the methods listed above on any pending or unsuccessful orders/demos to find out the User’s preferences for completing the order/demo and to assist the User in doing so.' },
-              { id: 3, para: '3. The User hereby irrevocably consents to the following messages by Skysecure via SMS, voice call, email, web-based messaging services like WhatsApp, or any other mode.' },
-              { id: 4, para: '4. According to the Telecom Regulation Authority of India’s (TRAI) guidelines, the communication must be:',
-              subData:[{ id: 1, para: 'upon the User’s request and authorization;' },
-              { id: 2, para: '“transactional” and not an “unsolicited commercial communication,” and' },
-              { id: 3, para: 'following all applicable TRAI rules or those of similar authorities in India and abroad.' }]
-           },
-           {id:5,para:'5. The User agrees to hold Skysecure from any losses or damages incurred by Skysecure as a result of any actions taken by TRAI, Access Providers (as per TRAI regulations), or any other authority in response to any incorrect complaint the User filed on Skysecure concerning the communications mentioned above, or as a result of the User providing a wrong number or email address for any reason at all.'}
+                { id: 1, para: '1. Skysecure will communicate with the User via SMS, internet-based messaging services like WhatsApp, voice call, email, or any other alternate communication method the User provided at the time of order to confirm the demo request, cancellation, payment confirmation, refund status, schedule change, or any other information pertinent to the transaction or booking made by the User.' },
+                { id: 2, para: '2. Skysecure may also get in touch with the User using the methods listed above on any pending or unsuccessful orders/demos to find out the User’s preferences for completing the order/demo and to assist the User in doing so.' },
+                { id: 3, para: '3. The User hereby irrevocably consents to the following messages by Skysecure via SMS, voice call, email, web-based messaging services like WhatsApp, or any other mode.' },
+                {
+                    id: 4, para: '4. According to the Telecom Regulation Authority of India’s (TRAI) guidelines, the communication must be:',
+                    subData: [{ id: 1, para: 'upon the User’s request and authorization;' },
+                    { id: 2, para: '“transactional” and not an “unsolicited commercial communication,” and' },
+                    { id: 3, para: 'following all applicable TRAI rules or those of similar authorities in India and abroad.' }]
+                },
+                { id: 5, para: '5. The User agrees to hold Skysecure from any losses or damages incurred by Skysecure as a result of any actions taken by TRAI, Access Providers (as per TRAI regulations), or any other authority in response to any incorrect complaint the User filed on Skysecure concerning the communications mentioned above, or as a result of the User providing a wrong number or email address for any reason at all.' }
             ]
-          },
-          
-       
+        },
+
+
     ]
-    
+
     return (
-        <div className='mt-100 ml-150 mr-150 mb-100'>
-          <strong>By accessing and using the site, you agree to these terms of use</strong>
-          <p>Please read these conditions carefully before using the Skysecure website. By using the Skysecure.com website, you signify your agreement to be bound by these conditions. These “Conditions of Use” constitute an electronic record within the meaning of the applicable law. This electronic record is generated by a computer system and does not require any physical or digital signatures.</p>
-          {obj.map(eachObj => (
-    <div key={eachObj.id} className='mt-30'> {/* Assuming each object has a unique 'head' */}
-        <h5>{eachObj.head}</h5>
-        {eachObj.data.map(eachData => (
-            <div key={eachData.id} className='ml-20'>
-                <p>{eachData.para}</p>
-                {eachData.subData && eachData.subData.map(subObj => (
-                    <p className='ml-30' key={subObj.id}>{subObj.para}</p>
-                ))}
-            </div>
-        ))}
-    </div>
-))}
+        <div className='container pt-30 pb-30 terms'>
+            <strong>By accessing and using the site, you agree to these terms of use</strong>
+            <p>Please read these conditions carefully before using the Skysecure website. By using the Skysecure.com website, you signify your agreement to be bound by these conditions. These “Conditions of Use” constitute an electronic record within the meaning of the applicable law. This electronic record is generated by a computer system and does not require any physical or digital signatures.</p>
+            {obj.map(eachObj => (
+                <div key={eachObj.id} className='mt-30'> 
+                    <h5>{eachObj.head}</h5>
+                    {eachObj.data.map(eachData => (
+                        <div key={eachData.id} className='ml-20'>
+                            <p>{eachData.para}</p>
+                            {eachData.subData && eachData.subData.map(subObj => (
+                                <p className='ml-30' key={subObj.id}>{subObj.para}</p>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            ))}
 
         </div>
     );

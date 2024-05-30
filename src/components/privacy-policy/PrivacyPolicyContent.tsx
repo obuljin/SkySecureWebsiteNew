@@ -465,7 +465,7 @@ const PrivacyPolicyContent = () => {
                         <ul>
                             {privacyPolicyData?.map((e, i) => (
                                 <React.Fragment key={i}>
-                                    <li className="mb-0 text-black pt-10 pb-10" style={{ fontWeight: "900", fontSize: "28px", listStyleType: "decimal" }}>{e.title}</li>
+                                    <li className="mb-0 text-black pt-10 pb-10" style={{ fontWeight: "800", fontSize: "18px", listStyleType: "decimal" }}>{e.title}</li>
                                     <ul>
                                         {e.data.map((item, j) => (
                                             <li key={j} className="mb-1" style={{ listStyleType: "decimal" }}>

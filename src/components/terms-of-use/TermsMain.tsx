@@ -5,9 +5,9 @@ import TermsContent from './TermsContent';
 const TermsMain = () => {
     return (
         <>
-            
-            <BreadcrumbWithImage pageTitle='Terms of Use - Skysecure' pageSmallTitle='Terms of Use' backgroundImage='assets/img/TermsOfUse/TermsOfUse.jpg' backgroundcolor=''/>
-           <TermsContent/>
+
+            <BreadcrumbWithImage pageTitle='Terms of Use - Skysecure' pageSmallTitle='Terms of Use' backgroundImage='assets/img/TermsOfUse/TermsOfUse.jpg' backgroundcolor='' />
+            <TermsContent />
         </>
     );
 };
