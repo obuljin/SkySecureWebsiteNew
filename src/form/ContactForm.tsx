@@ -3,18 +3,47 @@ import { contact_schema } from "@/utils/validation-schema";
 import React from "react";
 import { useFormik } from "formik";
 import ErrorMsg from "./ErrorMsg";
+import { toast } from "react-toastify"
 const ContactForm = () => {
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
     useFormik({
-      initialValues: { 
-        name: "",
+      initialValues: {
+        fullName: "",
         email: "",
         subject: "",
-        massage: "",
+        message: "",
       },
       validationSchema: contact_schema,
-      onSubmit: (values, { resetForm }) => {
-        resetForm();
+      onSubmit: async (values, { resetForm }) => {
+
+        console.log(values)
+
+        try {
+          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/form/create`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(values)
+          })
+          const response_json = await response.json()
+          // Check if the request was successful
+          if (response_json.code == 200) {
+            console.log('Data successfully posted');
+            toast.success(response_json.message);
+            resetForm();
+            // Redirect to a new page after successful submission if needed
+
+          } else {
+            toast.error(response_json.message);
+            console.error('Failed to post data:', response.statusText);
+          }
+
+        } catch (error) {
+          toast.error("Something is wrong ");
+          console.error('Error posting data:', error);
+        }
+        // resetForm();
       },
     });
   return (
@@ -24,8 +53,8 @@ const ContactForm = () => {
           <div className="col-lg-6">
             <div className="form-box user-icon mb-30">
               <input
-                name="name"
-                value={values.name}
+                name="fullName"
+                value={values.fullName}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 type="text"
@@ -35,7 +64,7 @@ const ContactForm = () => {
               <span>
                 <i className="fas fa-user"></i>
               </span>
-              {touched.name && <ErrorMsg error={errors.name} />}
+              {touched.fullName && <ErrorMsg error={errors.fullName} />}
             </div>
           </div>
           <div className="col-lg-6">
@@ -73,11 +102,11 @@ const ContactForm = () => {
           <div className="col-lg-12">
             <div className="form-box message-icon mb-30">
               <textarea
-                name="message" 
+                name="message"
                 id="message"
                 cols={30}
                 rows={10}
-                value={values.massage}
+                value={values.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 placeholder="Write message"
@@ -85,7 +114,7 @@ const ContactForm = () => {
               <span>
                 <i className="fas fa-pencil-alt"></i>
               </span>
-              {touched.massage && <ErrorMsg error={errors.massage} />}
+              {touched.message && <ErrorMsg error={errors.message} />}
             </div>
             <div className="contact-btn">
               <button className="btn" type="submit">
