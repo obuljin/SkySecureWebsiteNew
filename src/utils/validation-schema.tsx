@@ -21,7 +21,7 @@ export const contact_schema = Yup.object().shape({
   fullName: Yup.string().required().label("Fullname"),
   email: Yup.string().required().email().label("Email"),
   subject: Yup.string().required().label("Subject"),
-  message: Yup.string().required().min(5).label("Message")
+  message: Yup.string().required().min(3).label("Message")
 });
 export const ebook_schema = Yup.object().shape({
   firstName: Yup.string().required().label("Firstname"),

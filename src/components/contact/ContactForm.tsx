@@ -15,9 +15,9 @@ const ContactForm = () => {
         subject: "",
         message: "",
       },
-    validationSchema: contact_schema,
+      validationSchema: contact_schema,
 
-      onSubmit:async (values, { resetForm }) => {
+      onSubmit: async (values, { resetForm }) => {
         try {
           console.log(values)
           const api = process.env.NEXT_PUBLIC_API_URL
@@ -31,23 +31,23 @@ const ContactForm = () => {
           });
           const response_json = await response.json()
           console.log(response_json);
-          
-         // Check if the request was successful
-         if (response_json.code == 200) {
-           console.log('Data successfully posted');
-           toast.success(response_json.message);
-           resetForm();
-          // Redirect to a new page after successful submission if needed
-         
-         } else {
-          toast.error(response_json.message);
-          console.error('Failed to post data:', response.statusText);
-        }
+
+          // Check if the request was successful
+          if (response_json.code == 200) {
+            console.log('Data successfully posted');
+            toast.success(response_json.message);
+            resetForm();
+            // Redirect to a new page after successful submission if needed
+
+          } else {
+            toast.error(response_json.message);
+            console.error('Failed to post data:', response.statusText);
+          }
         } catch (error) {
           toast.error("Something is wrong ");
-        console.error('Error posting data:', error);
-      }
-  
+          console.error('Error posting data:', error);
+        }
+
       },
     });
 
@@ -78,7 +78,7 @@ const ContactForm = () => {
                         onBlur={handleBlur}
                         type="text"
                         placeholder="Full Name Here"
-                        
+
                       />
                       <span>
                         <i className="fas fa-user"></i>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                   <div className="col-lg-12">
                     <div className="form-box message-icon mb-30">
                       <textarea
-                        
+
                         name="message"
                         id="message"
                         cols={30}
@@ -140,7 +140,7 @@ const ContactForm = () => {
                     <div className="contact-btn contact-2-btn text-center">
                       <button className="btn" type="submit">
                         <span className="btn-text">
-                        send message
+                          send message
                           <i className="fas fa-long-arrow-alt-right"> </i>
                         </span>{" "}
                         <span className="btn-border"></span>
