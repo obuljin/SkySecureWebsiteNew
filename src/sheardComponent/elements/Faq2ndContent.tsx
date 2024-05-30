@@ -3,11 +3,15 @@ import { faqSidePageData } from '@/data/faq-side-data';
 import React, { useState } from 'react';
 
 const Faq2ndContent = () => {
-  const [activeItem, setActiveItem] = useState<number>(0);
+  const [activeItem, setActiveItem] = useState<number | null>(1);
   const [active, setactive] = useState<boolean>(true);
+  // const handleAccordionClick = (id: number) => {
+  //   setActiveItem(id);
+  //   setactive(!active);
+  // };
+
   const handleAccordionClick = (id: number) => {
-    setActiveItem(id);
-    setactive(!active);
+    setActiveItem((prevActiveItem) => (prevActiveItem === id ? null : id));
   };
   return (
     <>

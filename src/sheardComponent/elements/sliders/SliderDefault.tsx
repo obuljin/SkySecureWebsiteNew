@@ -158,14 +158,14 @@ const SliderDefault = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="bd-trending__navigation">
+        {/* <div className="bd-trending__navigation">
           <button className="banner-button-prev slick-arrow">
             <i className="fa-regular fa-angle-left"></i>
           </button>
           <button className="banner-button-next slick-arrow">
             <i className="fa-regular fa-angle-right"></i>
           </button>
-        </div>
+        </div> */}
       </div>
 
       <ModalVideo

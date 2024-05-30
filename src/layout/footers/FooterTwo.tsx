@@ -162,7 +162,7 @@ const FooterTwo = () => {
                         <i className="fas fa-phone"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="tel:+088889797697" target="_blank">
+                        <Link href="tel:+088889797697">
                           (+91) 73533 55526
                         </Link>
                       </div>
@@ -172,7 +172,7 @@ const FooterTwo = () => {
                         <i className="fas fa-envelope-open"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="mailto:support@gmail.com" target="_blank">
+                        <Link href="mailto:support@gmail.com">
                           sales@skysecuretech.com
                         </Link>
                       </div>

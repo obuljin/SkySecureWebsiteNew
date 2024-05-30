@@ -3,11 +3,15 @@ import { faqPageData } from '@/data/faq-page-data';
 import React, { useState } from 'react';
 
 const FaqContent = () => {
-  const [activeItem, setActiveItem] = useState<number>(0);
+  const [activeItem, setActiveItem] = useState<number | null>(1);
   const [active, setactive] = useState<boolean>(true);
+  // const handleAccordionClick = (id: number) => {
+  //   setActiveItem(id);
+  //   setactive(!active);
+  // };
+
   const handleAccordionClick = (id: number) => {
-    setActiveItem(id);
-    setactive(!active);
+    setActiveItem((prevActiveItem) => (prevActiveItem === id ? null : id));
   };
   return (
     <>
@@ -25,8 +29,8 @@ const FaqContent = () => {
                 >
                   <button
                     className={`accordion-button-custome ${activeItem === item.id && active
-                        ? "collapsed"
-                        : " "
+                      ? "collapsed"
+                      : " "
                       }`}
                     type="button"
                   >

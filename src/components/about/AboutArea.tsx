@@ -30,7 +30,7 @@ const AboutArea = () => {
                         <p>Founded by former Microsoft technologists and supported by a cadre of exceptionally skilled and certified professionals, Skysecure Technologies is built on a foundation of unparalleled expertise. This collaboration brings together a wealth of experience from one of the tech industry’s giants with the fresh, innovative approaches of a team dedicated to excellence. Each member’s commitment to staying at the forefront of technological advancements and cybersecurity trends ensures that Skysecure Technologies remains a leader in digital protection and resilience. This unique blend of seasoned insight and cutting-edge proficiency enables the company to offer robust, tailored solutions to its clients, setting a new standard in the realm of digital security.</p>
                     </div>
                     <div className="about-button text-center">
-                        <Link className="btn" href="/goals"><span className="btn-text">learn more <i className='fas fa-long-arrow-alt-right'></i></span></Link>
+                        <Link className="btn" href="/about"><span className="btn-text">learn more <i className='fas fa-long-arrow-alt-right'></i></span></Link>
                     </div>
                 </div>
             </div>

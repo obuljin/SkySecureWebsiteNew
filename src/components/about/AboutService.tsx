@@ -15,7 +15,7 @@ const AboutService = () => {
         <div className="container">
           <div className="row">
             {serviceManageData.map((item) => (
-              <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30" style={{zIndex:'0'}}>
                 <div className={item.class}>
                   <div className="services-icon">
                     <i className={item?.icon}> </i>
