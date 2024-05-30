@@ -8,7 +8,7 @@ const EbookWorkShop = () => {
             <div className="container-fluid" style={{ backgroundColor: "black" }}>
                 <div className="row ">
 
-                    <div className=" col-xl-7 col-lg-8 col-md-8 col-12  mt-30 mb-30" style={{ backgroundColor: "white", }}>
+                    <div className=" col-xl-6 col-lg-7 col-md-8 col-12  mt-30 mb-30" style={{ backgroundColor: "white", }}>
                         <div className="section-title">
                             <h4>Complimentary DPDP assessment workshop</h4>
                         </div>
@@ -23,7 +23,7 @@ const EbookWorkShop = () => {
                             </div>
                         </div>
                     </div>
-                    <div className=" col-xl-1 col-lg-2 col-md-2  d-none  d-sm-none d-md-block mt-30 mb-30" style={{ backgroundColor: "white", borderRadius: "0 50% 50% 0" }}></div>
+                    <div className=" col-xl-2 col-lg-2 col-md-3  d-none  d-sm-none d-md-block mt-30 mb-30" style={{ backgroundColor: "white", borderRadius: "0 50% 50% 0" }}></div>
                     <div className="col-xl-12 col-lg-12"></div>
                 </div>
             </div>
