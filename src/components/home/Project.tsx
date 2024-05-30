@@ -3,7 +3,7 @@ import CourseDefault from './CourseDefault';
 const Project = () => {
     return (
         <>
-              <div className="project-area pt-125 pb-115  pl-140 pr-140">
+              <div className="project-area pt-25 pb-115  pl-140 pr-140">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">

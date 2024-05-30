@@ -13,6 +13,7 @@ import BlogGrid from './Blog';
 import Brand from './Brand';
 import Newsletter from './Newsletter';
 import FullTeam from '../team/FullTeam';
+import PartnerBrand from './PartnerBrand';
 
 const HomeMain = () => {
     return (
@@ -22,13 +23,14 @@ const HomeMain = () => {
            <Service/>
            <Team/>
            {/* <Cta/> */}
+           <PartnerBrand/>
            <Project/>
            <Testimonial/>
            <CounterDefault/>
            <Video/>
            <Contact/>
            <BlogGrid/>
-           <Brand/>
+           {/* <Brand/> */}
            {/* <Newsletter/> */}
         </>
     );

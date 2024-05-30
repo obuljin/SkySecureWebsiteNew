@@ -4,15 +4,17 @@ const EbookForm = () => {
     return (
         <>
             <div className="container-fluid ">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6 mb-30 mt-30">
+                <div className="row mt-30 mb-30">
+                    <div className="col-xl-6 col-lg-6  mt-30 mb-30 " >
+                        <div style={{ marginLeft: "30px", marginRight: "30px" }}>
+                            <div className="section-title  mt-4 mb-20 ">
+                                <h1 className="fs-1">Helping you comply with data privacy and protection</h1>
+                            </div>
 
-                        <div className="section-title  mt-4 mb-20">
-                            <h2>Helping you comply with data privacy and protection</h2>
+                            <p className="fw-bolder text-black fs-5 mb-20">Navigating the complexities of the India Digital Personal Data Protection (DPDP) Act is a complex and demanding task. It has far-reaching implications for businesses, fundamentally changing the way personal data is handled and processed.</p>
+                            <p className=" text-black fs-5 mb-20">Skysecure, your accredited Microsoft security partner, can simplify your DPDP journey - from initial assessment to deployment, maintenance, and ongoing governance - through our tailored, leading-edge Microsoft security solutions and expert understanding of the Act.</p>
+                            <p className=" text-black fs-5 mb-20">Microsoft’s comprehensive security solutions enable you to address data privacy, governance, compliance, and risk management in a consistent, integrated manner using unified solutions that provide unprecedented visibility and protection across your data - all powered by AI and automation.</p>
                         </div>
-                        <p className="fw-bolder text-black">Navigating the complexities of the India Digital Personal Data Protection (DPDP) Act is a complex and demanding task. It has far-reaching implications for businesses, fundamentally changing the way personal data is handled and processed.</p>
-                        <p className=" text-black">Skysecure, your accredited Microsoft security partner, can simplify your DPDP journey - from initial assessment to deployment, maintenance, and ongoing governance - through our tailored, leading-edge Microsoft security solutions and expert understanding of the Act.</p>
-                        <p className=" text-black">Microsoft’s comprehensive security solutions enable you to address data privacy, governance, compliance, and risk management in a consistent, integrated manner using unified solutions that provide unprecedented visibility and protection across your data - all powered by AI and automation.</p>
                     </div>
                     <div className=" col-xl-6 col-lg-6 mb-30 mt-30">
                         <div className="container border border-dark bg-light">

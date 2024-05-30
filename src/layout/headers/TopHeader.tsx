@@ -12,8 +12,8 @@ const TopHeader = () => {
                     <div className="col-xl-8 col-lg-8 col-md-6 d-flex align-items-center">
                         <div className="header-info">
                             <span className=''><i className='far fa-map-marker-alt'></i>6/1, Bellandur, Bengaluru.</span>
-                            <span className="header-ph cta-link hover-white"> <Link href="tel:(+91) 73533 55526" target='_blank'><i className='fa-sharp fa-solid fa-phone'></i> (+91) 73533 55526</Link> </span>
-                            <span className="header-en hover-white"> <Link href="mailto:sales@skysecuretech.com" target='_blank'><i className='fas fa-envelope-open'></i>sales@skysecuretech.com</Link> </span>
+                            <span className="header-ph cta-link hover-white"> <Link href="tel:(+91) 73533 55526"><i className='fa-sharp fa-solid fa-phone'></i> (+91) 73533 55526</Link> </span>
+                            <span className="header-en hover-white"> <Link href="mailto:sales@skysecuretech.com"><i className='fas fa-envelope-open'></i>sales@skysecuretech.com</Link> </span>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6">

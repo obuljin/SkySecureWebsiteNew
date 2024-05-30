@@ -36,12 +36,12 @@ const CounterDefault = () => {
                 <div className="row turon-counter-content ">
                     {counters.map( (item, num) => (
                     <div key={num} className="col-xl-3 col-lg-3 col-md-6">
-                        <div className="counter-wrapper mb-30">
+                        <div className="counter-wrapper mb-30 text-center">
                             <div className="counter-icon">
                                 <i className={item.countIcon}></i>
                             </div>
                             <div className="counter-text">
-                                <h1 className="counter-title"><span className="counter">
+                                <h1 className="counter-title justify-content-center"><span className="counter">
                                 <CountUpContent number={item.countNum} text="" />
                                 </span>
                                 {item.countTitle!='Business Locations'?<span className="plus-icon">+</span>:null}

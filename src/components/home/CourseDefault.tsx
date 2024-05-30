@@ -49,7 +49,7 @@ const CourseDefault = () => {
       <Swiper
         modules={[Navigation, Scrollbar, A11y, Autoplay]}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={1}
         loop={true}
         observeParents={true}
         observer={true}
