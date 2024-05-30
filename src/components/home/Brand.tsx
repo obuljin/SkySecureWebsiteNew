@@ -78,10 +78,10 @@ const Brand = () => {
               centeredSlides={false}
               breakpoints={{
                 320: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                 },
                 992: {
                   slidesPerView: 4,
