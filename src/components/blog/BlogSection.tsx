@@ -47,11 +47,11 @@ const BlogSection = () => {
                   </div>
                 </div> */}
                 <div>
-                  A Guide To IT Security Transformation In Manufacturing
+                  <Link href={`/blog-details/${1}`}>A Guide To IT Security Transformation In Manufacturing</Link>
                 </div>
                 <hr className="my-4" style={{backgroundColor:"black",height:'2px'}}/>
                 <div>
-                  Threat Protection With Microsoft Azure Sentinel
+                  <Link href={`/blog-details/${2}`}>Threat Protection With Microsoft Azure Sentinel</Link>
                 </div>
               </div>
               <div className="widget mb-40">

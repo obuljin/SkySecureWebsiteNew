@@ -2,6 +2,7 @@ import React from "react";
 import imgOne from "../../../public/assets/img/blog/details/me.png";
 import Image from "next/image";
 import SocilaLinks from "@/utils/SocilaLinks";
+import Link from "next/link";
 const BlogWidgetAbout = () => {
   return (
     <>
@@ -51,11 +52,13 @@ const BlogWidgetAbout = () => {
                   </div>
                 </div> */}
                 <div>
-                  A Guide To IT Security Transformation In Manufacturing
+                  <Link href={`/blog-details/${1}`}> A Guide To IT Security Transformation In Manufacturing</Link>
+                 
                 </div>
                 <hr className="my-4" style={{backgroundColor:"black",height:'2px'}}/>
                 <div>
-                  Threat Protection With Microsoft Azure Sentinel
+                <Link href={`/blog-details/${2}`}>Threat Protection With Microsoft Azure Sentinel</Link>
+                  
                 </div>
               </div>
               <div className="widget mb-40">
