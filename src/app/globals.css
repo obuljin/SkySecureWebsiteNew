@@ -67,10 +67,11 @@ p{
   }
 
   .career_detail p {
-    font-family: 'cerebri_sanssemibold' !important;
+    font-family: 'cerebri_sansbold' !important;
   }
   .career_detail ul li {
-    font-family: 'cerebri_sansbold' !important;
+    text-align: justify !important;
+    /* font-family: 'cerebri_sanssemibold' !important; */
   }
 
   .terms{

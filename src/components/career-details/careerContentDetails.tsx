@@ -34,7 +34,7 @@ const CareerDetailsContent = ({ data }: propsType) => {
                                             sub_desc: ReactNode; title: string, data: Array<{ desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }>
                                         }, i: number) => (
                                             <React.Fragment key={i}>
-                                                <p className="mb-0 text-black pt-10 pb-10" style={{ fontWeight: "900", fontSize: "28px" }}>{e.title}</p>
+                                                <p className="mb-0 text-black pt-10 pb-10" style={{ fontWeight: "900", fontSize: "18px" }}>{e.title}</p>
                                                 <span style={{ fontSize: "15px" }}>{e.sub_desc}</span>
                                                 <ul>
                                                     {e.data.map((item: { desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined, sub_data?: Array<{ desc: string }> }, j: number) => (
