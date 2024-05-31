@@ -58,12 +58,12 @@ const HeaderOne = () => {
                   </Link>
                 </div>
               </div>
-              
+
               <div
                 id="right-header"
                 className="col-xl-7 col-lg-7 col-md-4 col-2 ml-30 d-flex justify-content-end"
               >
-{/*                 
+                {/*                 
                 <div className="header-button f-right d-none d-xl-block">
                   <Link className="btn" href="/goals">
                     <span className="btn-text">
@@ -135,12 +135,12 @@ const HeaderOne = () => {
                           )}
                         </li>
                       ))}
-                     
+
                     </ul>
-                    
+
                   </nav>
                 </div>
-                
+
               </div>
               {/* <div className="col-xl-2 col-lg-2 col-md-2 col-1">
                   <button className="btn btn-primary">sign-in</button>

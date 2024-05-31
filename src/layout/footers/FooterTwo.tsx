@@ -70,7 +70,7 @@ const FooterTwo = () => {
                       <Link href="/service-details/Simplified Management" >Simplified Management</Link>
                     </li>
                     <li>
-                      <Link href="/service-details/Organizational security & compliance metrics" >Security & Compliance Metrics</Link>
+                      <Link href="/service-details/Security & compliance metrics" >Security & Compliance Metrics</Link>
                     </li>
                     <li>
                       <Link href="/service-details/Operational Excellence" >Operational Excellence</Link>

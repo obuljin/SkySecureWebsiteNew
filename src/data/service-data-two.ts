@@ -188,7 +188,7 @@ export const serviceDataTwo = [
   {
     id: 6,
     img: IconSix,
-    title: "Organizational security & compliance metrics",
+    title: "Security & compliance metrics",
     details:
       "Our solution platform offer a clear picture of your organization's security performance, enabling you to assess risk levels, identify areas for improvement, and measure the effectiveness of your security controls and compliance initiatives.",
     icon: "fas fa-long-arrow-alt-right",
