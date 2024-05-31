@@ -73,36 +73,36 @@ const CourseDefault = () => {
           prevEl: ".case-button-prev",
         }}
       >
-        {casesData.map((item ,i) => (
+        {casesData.map((item, i) => (
           <SwiperSlide key={i}>
-             <div  className="col-12">
-            <div className="project-wrapper">
-              <div className="project-img">
-                <Link href="#">
-                  <Image  src={item.img} alt="" />
-                </Link>
-                <div className="project-text rounded-lg">
-                  {/* <span>{item.title}</span> */}
-                  <h3>
-                    <Link href={`/case-details/${item.title}`}>{item.title}</Link>
-                  </h3>
-                  <div className="bolg-top-button mt-2" >
-                    <Link className="btn"  href={`/case-details/${item.title}`}>
-                      <span className="btn-text" style={{color:'white'}}>
-                        READ MORE <i className="fas fa-long-arrow-alt-right"></i>
-                      </span>
-                    </Link>
-                  </div>
-                  {/* <Link href={`/case-details/${item.title}`}>
+            <div className="col-12">
+              <div className="project-wrapper">
+                <div className="project-img">
+                  <Link href="#">
+                    <Image style={{ width: "100%", height: "475px" }} src={item.img} alt="" />
+                  </Link>
+                  <div className="project-text">
+                    {/* <span>{item.title}</span> */}
+                    <h3>
+                      <Link href={`/case-details/${item.title}`}>{item.title}</Link>
+                    </h3>
+                    <div className="bolg-top-button mt-2" >
+                      <Link className="btn" href={`/case-details/${item.title}`}>
+                        <span className="btn-text" style={{ color: 'white' }}>
+                          READ MORE <i className="fas fa-long-arrow-alt-right"></i>
+                        </span>
+                      </Link>
+                    </div>
+                    {/* <Link href={`/case-details/${item.title}`}>
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>
                       </span>
                     </Link> */}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -115,7 +115,7 @@ const CourseDefault = () => {
           <i className="fa-regular fa-angle-right"></i>
         </button>
       </div> */}
-      
+
     </>
   );
 };

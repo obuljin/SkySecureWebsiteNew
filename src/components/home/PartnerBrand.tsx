@@ -59,12 +59,12 @@ const PartnerBrand = () => {
         <div className="brand-area pt-10 pb-10">
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                    <div className="col-xl-12 col-lg-12 ">
                         <div className="section-title text-center ml-50 mr-50 mb-80">
-                            <span className="border-left-1"></span>
-                            <span>OUR PARTNERSHIPS & ALLIANCES</span>
-                            <span className="border-right-1"></span>
-                            <h1>We&apos;ve had the pleasure of working with industry-defining brands.</h1>
+                            <span className="b-sm-left-1"></span>
+                            <span className="b-sm-left-2"></span>
+                            <span className="sub-t-left">OUR PARTNERSHIPS & ALLIANCES</span>
+                            <h1>We&apos;ve had the pleasure of working with industry - defining brands.</h1>
                         </div>
                     </div>
                 </div>

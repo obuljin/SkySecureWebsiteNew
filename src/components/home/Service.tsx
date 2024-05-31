@@ -14,10 +14,10 @@ const Service = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
               <div className="section-title text-center ml-50 mr-50 mb-80">
-                <span className="border-left-1"></span>
-                <span>what we do</span>
-                <span className="border-right-1"></span>
-                <h1>We provide exclusive services for your busainess</h1>
+                <span className="b-sm-left-1"></span>
+                <span className="b-sm-left-2"></span>
+                <span className="sub-t-left">what we do</span>
+                <h1>We provide exclusive services for your business</h1>
               </div>
             </div>
           </div>
@@ -26,11 +26,11 @@ const Service = () => {
               <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30" >
                 <div className="services-wrapper text-center ">
                   <div className="services-img" >
-                    <Image src={item.img} alt={item.title} style={{width:'30%', height:'auto'}}/>
+                    <Image src={item.img} alt={item.title} style={{ width: '30%', height: 'auto' }} />
                   </div>
                   <div className="services-text" >
                     <h3> {item.title} </h3>
-                    <p> {item.details.slice(0,180)}... </p>
+                    <p> {item.details.slice(0, 180)}... </p>
                     <Link href={`/service-details/${item.title}`}>
                       <span className="services-button">
                         read more{" "}
@@ -39,9 +39,9 @@ const Service = () => {
                     </Link>
                   </div>
                 </div>
-              
+
               </div>
-              
+
             ))}
           </div>
         </div>

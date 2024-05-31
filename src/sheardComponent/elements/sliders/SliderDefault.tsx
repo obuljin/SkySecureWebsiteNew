@@ -40,8 +40,8 @@ const SliderDefault = () => {
       <div className="slider-area">
         <Swiper
           modules={[Scrollbar, A11y, Autoplay, Navigation]}
-          observeParents={true}
-          observer={true}
+          // observeParents={true}
+          // observer={true}
           centeredSlides={true}
           autoplay={{
             delay: 5000,
@@ -72,13 +72,13 @@ const SliderDefault = () => {
                 {item.tooltip_text ? (
                   <Link href={item.link} title={item.tooltip_text}>
                     <div
-                      className="slider-height slider-overlay d-flex align-items-center"
+                      className="slider-height d-flex align-items-center"
                       style={{
                         backgroundImage: `url(${item.bgImg.src})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        // paddingTop: "100px",
-                        // paddingBottom: "100px",
+                        paddingTop: "100px",
+                        paddingBottom: "100px",
                         backgroundRepeat: "no-repeat",
                       }}
                     ></div>
@@ -89,6 +89,7 @@ const SliderDefault = () => {
                     style={{
                       backgroundImage: `url(${item.bgImg.src})`,
                       backgroundSize: "cover",
+                      backgroundPosition: "center",
                       paddingTop: "100px",
                       paddingBottom: "100px",
                     }}
