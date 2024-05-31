@@ -25,7 +25,8 @@ const ArticleLayout = () => {
                 <i className="fas fa-calendar"> </i> {item.date}
               </span>
               <span>
-                <i className="fas fa-comments"> </i>{item.message}
+                <i className="fas fa-comments"> </i>
+                {item.message}
               </span>
             </div>
             <h3 className="blog-title">
@@ -34,13 +35,13 @@ const ArticleLayout = () => {
             <div className="post-text mb-20">
               <p>{item.text}</p>
             </div>
-            <div className="read-more mt-30 btn">
-              <Link href={`/blog-details/${item.id}`}>
+            <Link href={`/blog-details/${item.id}`}>
+              <div className="read-more mt-30 btn">
                 <span className="btn-text">
                   Read More <i className="fas fa-long-arrow-alt-right"></i>
                 </span>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </article>
       ))}

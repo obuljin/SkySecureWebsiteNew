@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { serviceDataTwo } from "@/data/service-data-two";
+import { blogData } from '@/data/blog-data';
 
 interface propsType {
 	pageTitle: string,
@@ -44,7 +45,7 @@ const BreadcrumbWithImage = ({ pageTitle, pageSmallTitle , backgroundImage,backg
 		className="breadcrumb-area pt-150 pb-150" 
 		style={{ 
 			position: 'relative', 
-			background: `url(${backgroundImage ? backgroundImage : "assets/img/bg/breadcrumb.png"})`, 
+			background: `url(${backgroundImage ? backgroundImage : "/assets/img/bg/breadcrumb.png"})`, 
 			backgroundAttachment: "fixed", 
 			backgroundPosition: 'center', 
 			backgroundSize: 'cover' 
@@ -73,6 +74,11 @@ const BreadcrumbWithImage = ({ pageTitle, pageSmallTitle , backgroundImage,backg
 								{serviceDataTwo.some(service => service.title === pageSmallTitle) && (
 									<>
 										<li><Link href="/services" className='text-white'>Services</Link></li>
+									</>
+								)}
+								{blogData.some(blog => blog.title === pageSmallTitle) && (
+									<>
+										<li><Link href="/blog" className='text-white'>Blog</Link></li>
 									</>
 								)}
 								<li><span>{pageSmallTitle ? pageSmallTitle : 'N/A'}</span></li>

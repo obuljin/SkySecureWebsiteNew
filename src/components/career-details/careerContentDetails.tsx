@@ -28,7 +28,7 @@ const CareerDetailsContent = ({ data }: propsType) => {
                                 <div className="col-xl-12 col-lg-12">
                                     <div className="case-details-text">
                                         <h1> {data?.title} </h1>
-                                        <p className="text-black" style={{ fontSize: "15px" }}>{data?.details}</p>
+                                        {/* <p className="text-black" style={{ fontSize: "15px" }}>{data?.details}</p> */}
 
                                         {data?.data?.map((e: {
                                             sub_desc: ReactNode; title: string, data: Array<{ desc: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined }>

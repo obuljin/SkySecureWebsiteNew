@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { serviceDataTwo } from "@/data/service-data-two";
+import { courseData } from '@/data/courseData';
+import { blogData } from '@/data/blog-data';
 
 interface propsType {
 	pageTitle: string,
@@ -21,6 +23,12 @@ const Breadcrumb = ({ pageTitle, pageSmallTitle }: propsType) => {
 								{serviceDataTwo.some(service => service.title === pageSmallTitle) && (
 									<>
 										<li><Link href="/services" className='text-white'>Services</Link></li>
+									</>
+								)}
+
+								{courseData.some(course => course.title === pageSmallTitle) && (
+									<>
+										<li><Link href="/career" className='text-white'>Career</Link></li>
 									</>
 								)}
 								<li><span>{pageSmallTitle ? pageSmallTitle : 'N/A'}</span></li>
