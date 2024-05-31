@@ -17,14 +17,14 @@ const SliderDefault = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openVideoModal = () => setIsOpen(!isOpen);
   const sliderData = [
-    // {
-    //   id: 1,
-    //   bgImg: bgOne,
-    //   link: "/about",
-    //   title: "Bridging Technology and Tradition with Adaptive Automation",
-    //   details:
-    //     "The essence of integrating cutting-edge technology solutions with established business practices to drive efficiency, innovation, and growth.",
-    // },
+    {
+      id: 1,
+      bgImg: bgOne,
+      link: "/about",
+      title: "Bridging Technology and Tradition with Adaptive Automation",
+      details:
+        "The essence of integrating cutting-edge technology solutions with established business practices to drive efficiency, innovation, and growth.",
+    },
     {
       id: 2,
       bgImg: bgTwo,
@@ -40,8 +40,6 @@ const SliderDefault = () => {
       <div className="slider-area">
         <Swiper
           modules={[Scrollbar, A11y, Autoplay, Navigation]}
-          spaceBetween={0}
-          loop={true}
           observeParents={true}
           observer={true}
           centeredSlides={true}
@@ -74,7 +72,7 @@ const SliderDefault = () => {
                 {item.tooltip_text ? (
                   <Link href={item.link} title={item.tooltip_text}>
                     <div
-                      className="slider-height  d-flex align-items-center"
+                      className="slider-height slider-overlay d-flex align-items-center"
                       style={{
                         backgroundImage: `url(${item.bgImg.src})`,
                         backgroundSize: "cover",

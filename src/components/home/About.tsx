@@ -6,7 +6,7 @@ import Image from 'next/image';
 const About = () => {
     return (
         <>
-            <div className="about-area pt-130 pb-100">
+            <div className="about-area pt-30 pb-30">
             <div className="container">   
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 mb-30">
