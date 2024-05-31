@@ -4,8 +4,8 @@ import Link from "next/link";
 import "swiper/css/bundle";
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import thumbOne from "../../../public/assets/img/project/01.jpg";
-import thumbTwo from "../../../public/assets/img/project/02.jpg";
+import thumbOne from "../../../public/assets/img/project/image 1.png";
+import thumbTwo from "../../../public/assets/img/project/image 2.png";
 import thumbThree from "../../../public/assets/img/project/03.jpg";
 import Image from "next/image";
 import { casesData } from "@/data/case-data";
@@ -79,9 +79,9 @@ const CourseDefault = () => {
             <div className="project-wrapper">
               <div className="project-img">
                 <Link href="#">
-                  <Image style={{ width: "100%", height: "475px" }} src={item.img} alt="" />
+                  <Image  src={item.img} alt="" />
                 </Link>
-                <div className="project-text">
+                <div className="project-text rounded-lg">
                   {/* <span>{item.title}</span> */}
                   <h3>
                     <Link href={`/case-details/${item.title}`}>{item.title}</Link>

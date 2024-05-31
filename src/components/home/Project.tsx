@@ -18,7 +18,7 @@ const Project = () => {
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-xl-12 course-slider">
+                        <div className="col-xl-12 course-slider p-5">
                             <CourseDefault/>
                         </div>
                     </div>

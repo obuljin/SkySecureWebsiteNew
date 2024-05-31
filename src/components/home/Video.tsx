@@ -12,7 +12,7 @@ const Video = () => {
   return (
     <>
       <div
-        className="video-area pt-130"
+        className="video-area"
         style={{ background: "url(assets/img/bg/videoback.jpg)" }}
       >
         <div className="container">
