@@ -16,14 +16,14 @@ const SliderDefault = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openVideoModal = () => setIsOpen(!isOpen);
   const sliderData = [
-    {
-      id: 1,
-      bgImg: bgOne,
-      link: "/about",
-      title: "Bridging Technology and Tradition with Adaptive Automation",
-      details:
-        "The essence of integrating cutting-edge technology solutions with established business practices to drive efficiency, innovation, and growth.",
-    },
+    // {
+    //   id: 1,
+    //   bgImg: bgOne,
+    //   link: "/about",
+    //   title: "Bridging Technology and Tradition with Adaptive Automation",
+    //   details:
+    //     "The essence of integrating cutting-edge technology solutions with established business practices to drive efficiency, innovation, and growth.",
+    // },
     {
       id: 2,
       bgImg: bgTwo,
@@ -78,8 +78,8 @@ const SliderDefault = () => {
                         backgroundImage: `url(${item.bgImg.src})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
-                        paddingTop: "100px",
-                        paddingBottom: "100px",
+                        // paddingTop: "100px",
+                        // paddingBottom: "100px",
                         backgroundRepeat: "no-repeat",
                       }}
                     ></div>
