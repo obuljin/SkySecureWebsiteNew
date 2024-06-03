@@ -7,7 +7,7 @@ const AboutTestContent = () => {
         <div className="testimonial-text">
           <p>"One of the most remarkable aspects of our partnership with Skysecure has been their unwavering support. They provided comprehensive training to our staff, ensuring a smooth transition to the new systems. Their customer service is unparalleled; they were always available to answer our queries, address any issues promptly, and provide insightful advice to help us leverage technology to our advantage."</p>
           <div className="d-flex">
-          <div className="textimonial-text-svg" style={{ border: '3px solid #096BD8', borderRadius: '60%', padding:'3px 15px',  width: 'fit-content', height: 'fit-content' }}>
+          <div className="textimonial-text-svg" style={{ border: '2px solid #096BD8', borderRadius: '60%', padding:'3px 15px',  width: 'fit-content', height: 'fit-content' }}>
                 <svg
                     aria-hidden="true"
                     style={{ height: '40px', width: '20px', color: '#096BD8' }}
