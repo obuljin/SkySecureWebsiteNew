@@ -162,7 +162,7 @@ const FooterTwo = () => {
                 <div className="footer-wrapper footer-2-wrapper mb-30">
                   <h4 className="footer-title" >Contact Us</h4>
                   <div className="footer-info">
-                    <p className='!text-align-left' style={{ textAlign: 'left' }}>SKYSECURE TECHNOLOGIES PRIVATE LIMITED</p>
+                    <p>SKYSECURE TECHNOLOGIES PRIVATE LIMITED</p>
                   </div>
                   <ul className="contact-link">
                     <li>

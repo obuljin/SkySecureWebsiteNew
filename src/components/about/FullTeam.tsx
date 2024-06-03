@@ -27,7 +27,7 @@ const FullTeam = () => {
             <div className="col-xl-5 offset-xl-3 col-lg-6">
               <div className="team-section mb-30 z-index">
                 <p>
-                "Join our team of experts and embark on a mission to shape the future; where innovation meets resilience"
+                &quot;Join our team of experts and embark on a mission to shape the future; where innovation meets resilience&quot;
                 </p>
                 <Link className="btn" href="/career">
                   
