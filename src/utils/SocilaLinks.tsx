@@ -11,9 +11,9 @@ const SocilaLinks = () => {
       <Link href="https://twitter.com/SkysecureT?t=eIQh6SBZr52JEPj57ntPWw&amp;s=09/" target="_blank">
         <FaXTwitter />
       </Link>
-      <Link href="https://www.instagram.com/skysecuretech?igsh=ZmgxdjIzZ2JjcGhw" target="_blank">
+      {/* <Link href="https://www.instagram.com/skysecuretech?igsh=ZmgxdjIzZ2JjcGhw" target="_blank">
         <i className="fab fa-instagram"></i>
-      </Link>
+      </Link> */}
       <Link href="https://www.youtube.com/channel/UCdCps8R7SdXhW3YQnE6tsyg" target="_blank">
         <i className="fab fa-youtube"></i>
       </Link>

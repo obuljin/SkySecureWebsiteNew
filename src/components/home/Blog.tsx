@@ -21,7 +21,7 @@ const BlogGrid = () => {
             <div className="bolg-top-button text-md-right mt-90 " style={{ textAlign: "right" }}>
               <Link className="btn" href="/blog">
                 <span className="btn-text">
-                  view all News <i className="fas fa-long-arrow-alt-right"></i>
+                  view all Blogs <i className="fas fa-long-arrow-alt-right"></i>
                 </span>
               </Link>
             </div>

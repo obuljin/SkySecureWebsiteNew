@@ -93,9 +93,9 @@ const ContactForm = () => {
                 onBlur={handleBlur}
                 placeholder="Subject"
               />
-              <span>
+              {/* <span>
                 <i className="fas fa-chevron-down"></i>
-              </span>
+              </span> */}
               {touched.subject && <ErrorMsg error={errors.subject} />}
             </div>
           </div>

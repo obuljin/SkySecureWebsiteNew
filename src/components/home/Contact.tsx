@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
                 <div className="contact-bg">
                     <div className="row">
-                        <div className="col-xl-5 col-lg-5 mb-30">
+                        {/* <div className="col-xl-5 col-lg-5 mb-30">
                             <div className="map-wrapper">
                                 <div className="contact-map">
                                 <iframe 
@@ -33,8 +33,8 @@ const Contact = () => {
                                 ></iframe>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-7 col-lg-7 mb-30">
+                        </div> */}
+                        <div className="col-xl-12 col-lg-12 mb-30">
                             <div className="appointment-wrapper">
                                  <ContactForm/>
                             </div>

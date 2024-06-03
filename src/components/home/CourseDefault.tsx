@@ -79,7 +79,7 @@ const CourseDefault = () => {
               <div className="project-wrapper">
                 <div className="project-img">
                   <Link href="#">
-                    <Image style={{ width: "100%", height: "475px" }} src={item.img} alt="" />
+                    <Image src={item.img} alt="" />
                   </Link>
                   <div className="project-text">
                     {/* <span>{item.title}</span> */}
