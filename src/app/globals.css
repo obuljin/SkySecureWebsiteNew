@@ -84,14 +84,30 @@ p{
   .terms ul li {
     font-weight: 400 !important;
   }
+  .newsletter-form .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #696969; 
+  }
   
-.newsletter-form .icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #696969; /* Placeholder color */
-}
+  @media only screen and (max-width: 768px) {
+    .newsletter-form .icon {
+      position: absolute;
+      left: 10px;
+      top: 40%;
+      transform: translateY(-50%);
+      color: #696969;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .newsletter-form .icon {
+      left: 5px; 
+      top: 23%; 
+    }
+  }
 .about-2-img{
   max-width: 100%;
   height: auto;
@@ -140,9 +156,9 @@ p{
    
     }
   .project-wrapper .project-text h3{
-    font-size: 10px;
+    font-size: 20px;
   }
-  .project-wrapper .project-text span{
-    font-size: 10px;
-    
+  .project-wrapper .project-text .btn-{
+    font-size: 16px;
+    padding: 7px;
   }}
