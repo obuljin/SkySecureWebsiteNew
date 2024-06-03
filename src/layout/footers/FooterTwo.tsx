@@ -18,7 +18,15 @@ const FooterTwo = () => {
                   <div className="single-newsletter ">
                     <div className="newsletter-form">
                       <form action="#">
-                        <input placeholder="Enter Your Email :" type="email" />
+                        {/* <div>
+                          <span><i className="fas fa-envelope"></i></span>
+                          <input placeholder="Enter Your Email :" type="email" />
+                        </div> */}
+                        <div className="newsletter-email">
+                          <span className="icon"><i className="fas fa-envelope"></i></span>
+                          <input placeholder="Enter Your Email :" type="email" />
+                        </div>
+                        
                         <button className="btn" type="submit"><span className="btn-text">subscribe <i className='fas fa-long-arrow-alt-right'></i></span> <span className="btn-border"></span></button>
                       </form>
                     </div>
