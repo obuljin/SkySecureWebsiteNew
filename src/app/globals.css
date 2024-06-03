@@ -121,3 +121,31 @@ p{
 .text{
   height: 100px !important;
 }
+.testimonial-img img{
+  max-width: 100%;
+  height:auto
+}
+
+.project-text {
+  position: absolute;
+  border-radius: 10px;
+ 
+  }
+@media only screen and (max-width: 768px) {
+  
+  .project-wrapper .project-text {
+    opacity: 1;
+  }
+  .project-text {
+    position: absolute;
+    bottom: 10px;
+    top:10px;
+   
+    }
+  .project-wrapper .project-text h3{
+    font-size: 10px;
+  }
+  .project-wrapper .project-text span{
+    font-size: 10px;
+    
+  }}
