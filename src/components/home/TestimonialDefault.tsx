@@ -78,8 +78,8 @@ const TestimonialDefault = () => {
               <div className="testimonial-wrapper col">
                 <div className="testimonial-text">
                   <p>{item.details}</p>
-                  <h4> {item.name} </h4>
-                  <span> {item.title} </span>
+                  <h4 style={{fontSize:'26px'}}> {item.name} </h4>
+                  <span style={{textTransform:'lowercase'}}> {item.title} </span>
                 </div>
               </div>
             </SwiperSlide>
