@@ -1,10 +1,10 @@
 import AbouttestContent from './AboutTestContent'
 const AboutTestimonials=()=>{
     return(
-    <div className="testimonial-area testimonial pb-100">
+    <div className="testimonial-area testimonial">
     <div className="container">
         <div className="row">
-            <div className="col-xl-12 col-lg-12 pt-125 pb-95 mb-30">
+            <div className="col-xl-12 col-lg-12 pt-125 mb-30">
                 <div className="section-title  mb-45">
                     <span className="b-sm-left-1"></span>
                     <span className="b-sm-left-2"></span>
