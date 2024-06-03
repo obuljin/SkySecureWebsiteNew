@@ -97,3 +97,22 @@ p{
 .contact-info-column .contact {
     flex: 1;
 }
+
+.main-menu nav > ul > li:hover > a,
+.main-menu nav > ul > li.active > a {
+  color: red;
+}
+
+.main-menu > nav > ul > li > a::before {
+  background: var(--theme-color);
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  transition: 0.5s;
+}
+
+.main-menu > nav > ul > li.active > a::before {
+  width: 100%;
+}

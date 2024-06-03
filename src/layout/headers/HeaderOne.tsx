@@ -120,7 +120,7 @@ const HeaderOne = () => {
                   <nav id="mobile-menu">
                     <ul>
                       {navMenuData.map((item) => (
-                        <li key={item.id}>
+                        <li key={item.id} className={pathName === item.link ? "active" : ""}>
                           <Link href={item.link}> {item.label} </Link>
                           {item.hasDropdown === true && (
                             <>

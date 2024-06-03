@@ -2,8 +2,12 @@
 import navMenuData from "@/data/headernav/nav-menus";
 import useGlobalContext from "@/hooks/use-context";
 import Link from "next/link";
-import React, { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
 const MobileMenu = () => {
+
+  
+
   const { sideMenuOpen, toggleSideMenu, setSideMenuOpen } = useGlobalContext();
   const [activeMenu, setActiveMenu] = useState(false);
   const [menuId, setmenuId] = useState(0);
@@ -11,6 +15,8 @@ const MobileMenu = () => {
     setmenuId(menuLabel);
     setActiveMenu(!activeMenu);
   };
+
+
   return (
     <>
       <div
@@ -29,12 +35,12 @@ const MobileMenu = () => {
                 key={index}
                 className={
                   menuId === menuItem.id &&
-                  menuItem.hasDropdown === true &&
-                  activeMenu
+                    menuItem.hasDropdown === true &&
+                    activeMenu
                     ? "has-droupdown active"
                     : menuItem.hasDropdown === false
-                    ? ""
-                    : "has-droupdown"
+                      ? ""
+                      : "has-droupdown"
                 }
               >
                 <Link
@@ -57,7 +63,7 @@ const MobileMenu = () => {
                   {menuItem.subMenu?.length &&
                     menuItem.subMenu.map((subMenuItem, subIndex) => (
                       <li key={subIndex}>
-                        <Link onClick={toggleSideMenu} href={subMenuItem.link}>
+                        <Link onClick={toggleSideMenu} href={subMenuItem.link} >
                           {subMenuItem.label}
                         </Link>
                       </li>
