@@ -132,7 +132,10 @@ p{
   margin-top: 32px;
   border-radius: 10px;
   border-color: '#096BD8';
+}
 
+.text{
+  height: 100px !important;
 }
 .testimonial-img img{
   max-width: 100%;

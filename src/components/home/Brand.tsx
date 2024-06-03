@@ -69,9 +69,11 @@ const Brand = () => {
               spaceBetween={30}
               observeParents={true}
               autoplay={{
-                delay: 3000,
+                delay: 400,
                 disableOnInteraction: false,
               }}
+              speed={1100}
+              loop={false}
               slidesPerView={5}
               observer={true}
               centeredSlides={false}

@@ -11,9 +11,13 @@ import brandEight from "../../../public/assets/img/Partnership/Partnership/redin
 import brandNine from "../../../public/assets/img/Partnership/Partnership/techdata.png";
 // import brandTen from "../../../public/assets/img/brand/saraf.png";
 import Image from "next/image";
-import "swiper/css/bundle";
-import { Navigation, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import { Navigation,Autoplay, Pagination } from "swiper";
+import 'swiper/swiper-bundle.min.css';
+import { Autoplay, Navigation } from "swiper";
 
 const PartnerBrand = () => {
     const brandLogos = [
@@ -71,16 +75,14 @@ const PartnerBrand = () => {
                 <div className="row">
                     <div className="col-xl-12">
                         <Swiper
-                            modules={[Navigation, Scrollbar, A11y, Autoplay]}
+                            modules={[Navigation, Autoplay]}
                             spaceBetween={30}
-                            observeParents={true}
                             autoplay={{
-                                delay: 3000,
+                                delay: 400,
                                 disableOnInteraction: false,
                             }}
-                            slidesPerView={5}
-                            observer={true}
-                            centeredSlides={false}
+                            loop={false}
+                            speed={1100}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 2,
@@ -98,17 +100,17 @@ const PartnerBrand = () => {
                                     slidesPerView: 5,
                                 },
                             }}
-                            navigation={{
-                                nextEl: ".bd-amenities-slider-next",
-                                prevEl: ".bd-amenities-slider-prev",
-                            }}
+                            // navigation={{
+                            //     nextEl: ".bd-amenities-slider-next",
+                            //     prevEl: ".bd-amenities-slider-prev",
+                            // }}
                         >
-                            {brandLogos.map((item) => (
-                                <SwiperSlide key={item.id}>
+                            {brandLogos.map((item, i) => (
+                                <SwiperSlide key={i}>
                                     <div className="brand-img">
                                         <Image
                                             src={item.logo}
-                                            alt=""
+                                            alt={`brand ${item.id}`}
                                             style={{ width: "100%", height: "auto" }}
                                         />
                                     </div>
