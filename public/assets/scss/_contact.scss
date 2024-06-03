@@ -364,10 +364,25 @@
 	height: 750px;
   }
   .contact-info-area {
-	  margin-top: -140px;
+	//   margin-top: -140px;
+	padding-top: 100px;
   }
   .contact {
-	  padding: 70px 10px;
+	//   padding: 70px 10px;
+	//   display: flex;
+	//   align-items: center;
+	//   justify-content: center;
+	//   flex-direction: column;
+	//   height: 100%;
+	flex: 1 1 calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
   }
   .contact-area {
 	background-position: center center;

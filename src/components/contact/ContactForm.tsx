@@ -114,7 +114,7 @@ const ContactForm = () => {
                         placeholder="Subject"
                       />
                       <span>
-                        <i className="fas fa-chevron-down"></i>
+                        {/* <i className="fas fa-chevron-down"></i> */}
                       </span>
                       {touched.subject && <ErrorMsg error={errors.subject} />}
                     </div>
@@ -141,7 +141,7 @@ const ContactForm = () => {
                       <button className="btn" type="submit">
                         <span className="btn-text">
                           send message
-                          <i className="fas fa-long-arrow-alt-right"> </i>
+                          {/* <i className="fas fa-long-arrow-alt-right"> </i> */}
                         </span>{" "}
                         <span className="btn-border"></span>
                       </button>

@@ -84,3 +84,16 @@ p{
   .terms ul li {
     font-weight: 400 !important;
   }
+
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Adjust the gap as needed */
+}
+.contact-info-column {
+    display: flex;
+    flex-direction: column;
+}
+.contact-info-column .contact {
+    flex: 1;
+}
