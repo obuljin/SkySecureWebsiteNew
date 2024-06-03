@@ -79,9 +79,12 @@ const Courses = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-8 offset-lg-2 offset-xl-3">
               <div className="section-title text-center ml-50 mr-50 mb-75">
-                <span className="border-left-1"></span>
+                {/* <span className="border-left-1"></span>
                 <span>Job category</span>
-                <span className="border-right-1"></span>
+                <span className="border-right-1"></span> */}
+                <span className="b-sm-left-1"></span>
+                <span className="b-sm-left-2"></span>
+                <span className="sub-t-left">Job category</span>
                 <h1>Our Latest Job Category</h1>
               </div>
             </div>

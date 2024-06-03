@@ -16,6 +16,8 @@ import {
 import SidebarCart from "./SidebarCart";
 import SidebarWishlist from "./SidebarWishlist";
 import MobileMenu from "./MobileMenu";
+
+
 const HeaderOne = () => {
   const pathName = usePathname();
   const { setOpenCart, setOpenWishlist, toggleSideMenu, sideMenuOpen } =
@@ -37,6 +39,16 @@ const HeaderOne = () => {
         ? header.classList.add("sticky")
         : header.classList.remove("sticky");
     }
+  };
+
+  const isActive = (link: string, subMenu: any[] | undefined) => {
+    if (pathName === link) {
+      return true;
+    }
+    if (subMenu) {
+      return subMenu.some((subItem) => pathName === subItem.link);
+    }
+    return false;
   };
   return (
     <>
@@ -120,7 +132,7 @@ const HeaderOne = () => {
                   <nav id="mobile-menu">
                     <ul>
                       {navMenuData.map((item) => (
-                        <li key={item.id}>
+                        <li key={item.id} className={isActive(item.link, item.subMenu) ? 'active' : ''}>
                           <Link href={item.link}> {item.label} </Link>
                           {item.hasDropdown === true && (
                             <>

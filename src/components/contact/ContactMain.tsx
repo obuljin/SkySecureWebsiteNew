@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 const ContactMain = () => {
     return (
         <>
-            <Breadcrumb pageTitle='Contacts - Skysecure' pageSmallTitle='Contact'/>
+            <Breadcrumb pageTitle='Contact - Skysecure' pageSmallTitle='Contact'/>
             <GoogleMap/>
             <ContactArea/>
             <ContactForm/>

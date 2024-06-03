@@ -101,7 +101,7 @@ const navMenuData: MenuItem[] = [
   { id: 32, 
     hasDropdown: true, 
     label: "Community", 
-    link: "/",
+    link: "#",
     subMenu: [
         {id: 13,
           label: "Career",
