@@ -1,27 +1,28 @@
 import CountUpContent from "@/utils/CountUpContent";
 import React from "react";
+import bg from '../../../public/assets/img/bg/bg-loc.jpg'
 const CounterDefault = () => {
     const counters = [
         {
-            countIcon: 'fas fa-check-square',
+            countIcon: 'fal fa-clock',
             countIconPrefix: 'fas',
             countNum: 1460,
             countTitle: 'Consulting Hours'
         },
         {
-            countIcon: 'fas fa-heart',
+            countIcon: 'fal fa-smile',
             countIconPrefix: 'fas',
             countNum: 100,
             countTitle: 'Happy Customers'
         },
         {
-            countIcon: 'fas fa-users',
+            countIcon: 'fal fa-briefcase',
             countIconPrefix: 'fas',
             countNum : 50,
             countTitle: 'Business Members'
         },
         {
-            countIcon: 'fas fa-map-marker-alt',
+            countIcon: 'fal fa-map-marker',
             countIconPrefix: 'fas',
             countNum : 3,
             countTitle: 'Business Locations'
@@ -30,7 +31,7 @@ const CounterDefault = () => {
     ];
 
     return(
-        <div className="counter-area pt-130 pb-100" style={{ backgroundColor:'#096bd8' }}>
+        <div className="counter-area pt-130 pb-100" style={{backgroundImage: 'url("assets/img/bg/bg-loc.jpg")',backgroundSize:'cover'}}>
             <div className="container">
                 {counters &&
                 <div className="row turon-counter-content ">

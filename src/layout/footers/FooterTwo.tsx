@@ -41,7 +41,7 @@ const FooterTwo = () => {
                   </div>
                   <div className="footer-text" >
                     <p >
-                      With a strong focus on innovation, expertise, and client-centric services, Skysecure stands at the forefront of digital innovation, offering bespoke solutions to businesses globally
+                      "With a strong focus on innovation, expertise, and client-centric services, Skysecure stands at the forefront of digital innovation, offering bespoke solutions to businesses globally."
                       {/* At 1vero eoset accusamus et iusto odio dignissimos ducimus
                       qui blpraesentium voluptatum deleniti atque corrupti quos
                       dolores et quas molestias excepturi{" "} */}
