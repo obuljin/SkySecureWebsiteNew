@@ -1,4 +1,4 @@
-import TestimonialDefault from "../home/TestimonialDefault";
+import AbouttestContent from './AboutTestContent'
 const AboutTestimonials=()=>{
     return(
     <div className="testimonial-area testimonial pb-100">
@@ -9,9 +9,9 @@ const AboutTestimonials=()=>{
                     <span className="b-sm-left-1"></span>
                     <span className="b-sm-left-2"></span>
                     <span className="sub-t-left">Testimonials</span>
-                    <h1>What Our Clients Say About us</h1>
+                    <h1>More than 100+ <span>Happy Customers</span></h1>
                 </div>
-                 <TestimonialDefault/>
+                 <AbouttestContent/>
             </div>
             
         </div>
