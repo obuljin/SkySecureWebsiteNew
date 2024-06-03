@@ -27,7 +27,7 @@ const FullTeam = () => {
             <div className="col-xl-5 offset-xl-3 col-lg-6">
               <div className="team-section mb-30 z-index">
                 <p>
-                Join our team of experts and embark on a mission to shape the future; where innovation meets resilience
+                "Join our team of experts and embark on a mission to shape the future; where innovation meets resilience"
                 </p>
                 <Link className="btn" href="/career">
                   
@@ -50,7 +50,7 @@ const FullTeam = () => {
                     </div>
                     <div className="text">
                       <h4> {item.name}</h4>
-                      <span> {item.title} </span>
+                      <span style={{color:"#000000", fontSize:'14px'}}> {item.title} </span>
                       {/* <div className="team-icon">
                         <Link href="https://www.facebook.com/">
                           <i className={item.facebook}></i>

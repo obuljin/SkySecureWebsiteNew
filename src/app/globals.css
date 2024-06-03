@@ -84,3 +84,37 @@ p{
   .terms ul li {
     font-weight: 400 !important;
   }
+  
+.newsletter-form .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #696969; /* Placeholder color */
+}
+.about-2-img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.project-img img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.section-title span{
+  color: blue;
+}
+.testimonial-text >div >svg{
+  width: 1em;
+  height: 1em;
+}
+.textimonial-text-svg{
+  font-size: 22px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  margin-top: 32px;
+  border-radius: 10px;
+  border-color: '#096BD8';
+
+}
