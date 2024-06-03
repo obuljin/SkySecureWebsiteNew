@@ -10,7 +10,7 @@ const AboutArea = () => {
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 mb-30">
                             <div className="about-2-img">
-                                <Image src={thumbOne} alt="img-data" className='w-100' />
+                                <Image src={thumbOne} alt="img-data" className='w-100' style={{borderRadius:'8px',height:'auto'}} />
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 mb-30">
