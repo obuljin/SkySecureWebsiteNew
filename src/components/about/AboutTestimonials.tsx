@@ -1,7 +1,7 @@
 import AbouttestContent from './AboutTestContent'
 const AboutTestimonials=()=>{
     return(
-    <div className="testimonial-area testimonial">
+    <div className="testimonial-area testimonial pb-50">
     <div className="container">
         <div className="row">
             <div className="col-xl-12 col-lg-12 pt-125 mb-30">

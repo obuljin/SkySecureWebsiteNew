@@ -49,7 +49,7 @@ const FooterTwo = () => {
                   </div>
                   <div className="footer-text" >
                     <p >
-                      "With a strong focus on innovation, expertise, and client-centric services, Skysecure stands at the forefront of digital innovation, offering bespoke solutions to businesses globally."
+                    &quot;With a strong focus on innovation, expertise, and client-centric services, Skysecure stands at the forefront of digital innovation, offering bespoke solutions to businesses globally.&quot;
                       {/* At 1vero eoset accusamus et iusto odio dignissimos ducimus
                       qui blpraesentium voluptatum deleniti atque corrupti quos
                       dolores et quas molestias excepturi{" "} */}
@@ -170,9 +170,9 @@ const FooterTwo = () => {
                         <i className="fas fa-phone"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="tel:+088889797697">
+                        <span style={{ color: '#b8b8b8' }}>
                           (+91) 73533 55526
-                        </Link>
+                        </span>
                       </div>
                     </li>
                     <li>
@@ -180,9 +180,9 @@ const FooterTwo = () => {
                         <i className="fas fa-envelope-open"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="mailto:support@gmail.com">
+                        <span style={{ color: '#b8b8b8' }}>
                           sales@skysecuretech.com
-                        </Link>
+                        </span>
                       </div>
                     </li>
                     <li>
@@ -190,7 +190,7 @@ const FooterTwo = () => {
                         <i className="fas fa-map-marker-alt"></i>
                       </div>
                       <div className="contact-address-text">
-                        <Link href="">AGR Plaza, 6/1, Bellandur, Bengaluru, Karnataka-560103</Link>
+                        <span style={{ color: '#b8b8b8' }}>AGR Plaza, 6/1, Bellandur, Bengaluru, Karnataka-560103</span>
                       </div>
                     </li>
                   </ul>
