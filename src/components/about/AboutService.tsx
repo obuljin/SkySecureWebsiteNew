@@ -27,7 +27,7 @@ const AboutService = () => {
                     </p>
                     <Link href='/services'>
                       <span className="services-button">
-                        read more{" "}
+                        {/* read more{" "} */}
                         <i className="fas fa-long-arrow-alt-right"></i>
                       </span>
                     </Link>

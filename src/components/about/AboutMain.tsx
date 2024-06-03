@@ -6,6 +6,8 @@ import ChoseArea from "./ChoseArea";
 import Brand from "../home/Brand";
 import CtaTwo from "@/sheardComponent/CtaTwo";
 import FullTeam from "./FullTeam";
+import AboutTestimonials from "./AboutTestimonials";
+
 
 const AboutMain = () => {
   return (
@@ -16,7 +18,9 @@ const AboutMain = () => {
       <ChoseArea />
       <FullTeam />
       <CtaTwo/>
+      <AboutTestimonials/>
       {/* <ClientSection /> */}
+      
       <Brand />
     </>
   );
