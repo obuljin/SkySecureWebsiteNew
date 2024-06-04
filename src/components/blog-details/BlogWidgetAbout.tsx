@@ -26,7 +26,7 @@ const BlogWidgetAbout = () => {
     <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
-                  <h3 className="widget-title">Search Objects</h3>
+                  <h3 className="widget-title">Search </h3>
                 </div>
                 <form className="search-form">
                   <input type="text" placeholder="Search your keyword..." />
