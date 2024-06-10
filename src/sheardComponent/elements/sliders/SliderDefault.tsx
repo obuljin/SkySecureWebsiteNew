@@ -6,7 +6,7 @@ import { Scrollbar, A11y, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import bgOne from "../../../../public/assets/img/banner/banner.png";
-import bgTwo from "../../../../public/assets/img/banner/banner3.png";
+import bgTwo from "../../../../public/assets/img/banner/banner4.png";
 // import bgTwo from "../../../../public/assets/img/bg/ebook.png";
 import bgFour from "../../../../public/assets/img/slider/slider-4.jpg";
 import bgFive from "../../../../public/assets/img/slider/slider-5.jpg";
@@ -29,9 +29,8 @@ const SliderDefault = () => {
       id: 2,
       bgImg: bgTwo,
       link: "/e-book",
-      tooltip_text: "View E-Book",
-      title: "",
-      details: "",
+      title: "Digital Personal Data Protection (DPDP) ACT 2023",
+      details: "Managing Compliance & Regulatory Obligations",
     },
   ];
 
@@ -44,7 +43,7 @@ const SliderDefault = () => {
           // observer={true}
           centeredSlides={true}
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -69,21 +68,7 @@ const SliderDefault = () => {
           {sliderData?.map((item, index) => (
             <SwiperSlide key={item.id}>
               <div className="single-slider">
-                {item.tooltip_text ? (
-                  <Link href={item.link} title={item.tooltip_text}>
-                    <div
-                      className="slider-height d-flex align-items-center"
-                      style={{
-                        backgroundImage: `url(${item.bgImg.src})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        paddingTop: "100px",
-                        paddingBottom: "100px",
-                        backgroundRepeat: "no-repeat",
-                      }}
-                    ></div>
-                  </Link>
-                ) : (
+               
                   <div
                     className="slider-height slider-overlay z-1 d-flex align-items-center"
                     style={{
@@ -113,14 +98,12 @@ const SliderDefault = () => {
                               data-animation="fadeInUp"
                               data-delay=".7s"
                             >
-                              {!item.tooltip_text && (
                                 <Link className="btn" href={item.link}>
                                   <span className="btn-text">
                                     learn more{" "}
                                     <i className="fas fa-long-arrow-alt-right"></i>{" "}
                                   </span>
                                 </Link>
-                              )}
                               {/* <Link
                               className={`${
                                 pathName === "/home-2"
@@ -153,7 +136,6 @@ const SliderDefault = () => {
                       </div>
                     </div>
                   </div>
-                )}
               </div>
             </SwiperSlide>
           ))}
