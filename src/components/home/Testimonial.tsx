@@ -7,7 +7,7 @@ const Testimonial = () => {
         <>
              <div className="testimonial-area testimonial pb-100">
             <div className="container">
-                <div className="row">
+                <div className="row align-items-center">
                     <div className="col-xl-6 col-lg-6 mb-30">
                         <div className="section-title  mb-45">
                             <span className="b-sm-left-1"></span>
