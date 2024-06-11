@@ -28,48 +28,48 @@ const BlogGrid = () => {
           </div>
         </div>
         <div className="row">
-           {blogDataTwo.slice(0,2).map((item)=>(
-              <div key={item.id} className="col-xl-4 col-lg-4 col-md-12 mb-30">
-            <div className="blog-wrapper">
-              <div className="blog-img">
-                <Link href={`/blog-details/${item.id}`}>
-                  <Image style={{ width: "100%", height: "auto" }} src={item.image} alt="img" />
-                </Link>
-              </div>
-              <div className="blog-meta">
-                <span>
-                  {" "}
-                  <i className="fas fa-user"> </i> {item.user}
-                </span>
-                <span>
-                  {" "}
-                  <i className="fas fa-calendar"> </i> {item.date}
-                </span>
-                <span>
-                  {" "}
-                  <i className="fas fa-comments"> </i> {item.message}
-                </span>
-              </div>
-              <div className="blog-text">
-                <h3>
+          {blogDataTwo.slice(0, 2).map((item) => (
+            <div key={item.id} className="col-xl-6 col-lg-6 col-md-12 mb-30">
+              <div className="blog-wrapper">
+                <div className="blog-img">
                   <Link href={`/blog-details/${item.id}`}>
-                    {item.title}
+                    <Image style={{ width: "100%", height: "auto" }} src={item.image} alt="img" />
                   </Link>
-                </h3>
-                <p>
-                  {item.text}
-                </p>
-                <Link href={`/blog-details/${item.id}`}>
-                  <span className="blog-button">
-                    read more <i className="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div className="blog-meta">
+                  <span>
+                    {" "}
+                    <i className="fas fa-user"> </i> {item.user}
                   </span>
-                </Link>
+                  <span>
+                    {" "}
+                    <i className="fas fa-calendar"> </i> {item.date}
+                  </span>
+                  <span>
+                    {" "}
+                    <i className="fas fa-comments"> </i> {item.message}
+                  </span>
+                </div>
+                <div className="blog-text">
+                  <h3>
+                    <Link href={`/blog-details/${item.id}`}>
+                      {item.title}
+                    </Link>
+                  </h3>
+                  <p>
+                    {item.text}
+                  </p>
+                  <Link href={`/blog-details/${item.id}`}>
+                    <span className="blog-button">
+                      read more <i className="fas fa-long-arrow-alt-right"></i>
+                    </span>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-            ))}
+          ))}
           <div className="col-xl-8 col-lg-8">
-            
+
 
             {/* {
               blogDataTwo.slice(4,6).map((item)=>(
@@ -114,7 +114,7 @@ const BlogGrid = () => {
             </div>
               ))
             } */}
-            
+
           </div>
         </div>
       </div>
