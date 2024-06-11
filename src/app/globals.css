@@ -139,7 +139,8 @@ p{
 }
 .testimonial-img img{
   max-width: 100%;
-  height:auto
+  height:400px;
+  width: 400px;
 }
 
 .project-text {

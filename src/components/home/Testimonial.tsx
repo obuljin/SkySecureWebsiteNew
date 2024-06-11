@@ -19,7 +19,7 @@ const Testimonial = () => {
                     </div>
                     <div className="col-xl-6 col-lg-6 mb-30">
                         <div className="testimonial-img d-flex justify-content-center "  >
-                            <Image  src={thumb} alt="testimonial"  />
+                            <Image  src={thumb} alt="testimonial"/>
                         </div>
                     </div>
                 </div>
