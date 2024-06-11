@@ -1,5 +1,5 @@
 import React from 'react';
-import thumb from "../../../public/assets/img/testimonial/1(3).svg"
+import thumb from "../../../public/assets/img/testimonial/testimonial1.png"
 import Image from 'next/image';
 import TestimonialDefault from './TestimonialDefault';
 const Testimonial = () => {
