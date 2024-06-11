@@ -29,8 +29,11 @@ const SliderDefault = () => {
       id: 2,
       bgImg: bgTwo,
       link: "/e-book",
-      title: "Digital Personal Data Protection (DPDP) ACT 2023",
+      title: "Digital Personal Data ",
+      // title: "Bridging Technology and Tradition ",
+      title2:'Protection (DPDP) ACT 2023',
       details: "Managing Compliance & Regulatory Obligations",
+      // details: "The essence of integrating cutting-edge technology solutions with established business practices to drive efficiency, innovation, and growth.",
     },
   ];
 
@@ -42,10 +45,10 @@ const SliderDefault = () => {
           // observeParents={true}
           // observer={true}
           centeredSlides={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
           navigation={{
             nextEl: ".banner-button-next",
             prevEl: ".banner-button-prev",
@@ -86,11 +89,12 @@ const SliderDefault = () => {
                             <h1
                               data-animation="fadeInLeft"
                               data-delay=".3s"
-                              style={{ fontSize: "60px", fontWeight: "400" }}
+                              style={{ fontSize: "60px", fontWeight: "400" , lineHeight: "70px"}}
                             >
-                              {item.title}
+                              {item.title}<br/>
+                              {item?.title2}
                             </h1>
-                            <p data-animation="fadeInLeft" data-delay=".5s">
+                            <p data-animation="fadeInLeft" data-delay=".5s" className="py-2">
                               {item.details}
                             </p>
                             <div

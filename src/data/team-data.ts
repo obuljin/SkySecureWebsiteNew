@@ -1,7 +1,7 @@
 import { teamDataType } from "@/interFace/interFace";
-import imgOne from "../../public/assets/img/team/suresh.png";
-import imgTwo from "../../public/assets/img/team/nitin.png";
-import imgThree from "../../public/assets/img/team/prasant.png";
+import imgOne from "../../public/assets/img/team/suresh.svg";
+import imgTwo from "../../public/assets/img/team/nitin.svg";
+import imgThree from "../../public/assets/img/team/prasant.svg";
 import imgFour from "../../public/assets/img/team/team-04.jpg";
 import imgFive from "../../public/assets/img/team/team-05.jpg";
 import imgSix from "../../public/assets/img/team/team-06.jpg";
