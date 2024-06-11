@@ -45,10 +45,10 @@ const SliderDefault = () => {
           // observeParents={true}
           // observer={true}
           centeredSlides={true}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           navigation={{
             nextEl: ".banner-button-next",
             prevEl: ".banner-button-prev",
@@ -89,12 +89,12 @@ const SliderDefault = () => {
                             <h1
                               data-animation="fadeInLeft"
                               data-delay=".3s"
-                              style={{ fontSize: "60px", fontWeight: "400" , lineHeight: "70px"}}
+                              style={{ fontSize: "60px", fontWeight: "400" , lineHeight: "70px", marginBottom: "10px"}}
                             >
                               {item.title}<br/>
                               {item?.title2}
                             </h1>
-                            <p data-animation="fadeInLeft" data-delay=".5s" className="py-2">
+                            <p data-animation="fadeInLeft" data-delay=".5s" style={{paddingTop: "5px", paddingBottom: "5px"}}>
                               {item.details}
                             </p>
                             <div
