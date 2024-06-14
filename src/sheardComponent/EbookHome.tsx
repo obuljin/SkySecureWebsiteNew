@@ -12,7 +12,7 @@ const EbookHome = ({ pageTitle }: propsType) => {
 	return (
 
 
-		<div className="">
+		<div className="container-fluid">
 
 			<Image src={ebookBaner} className="" alt="..." style={{ width: "100%", height: "auto", backgroundSize: "cover" }} />
 		</div>

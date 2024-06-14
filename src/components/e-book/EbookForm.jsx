@@ -3,11 +3,11 @@ import ContactFormEbook from "@/form/ContactFormEbook"
 const EbookForm = () => {
     return (
         <>
-            <section className="blog-area pt-120 pb-80">
+            <section className="blog-area margin-top-bottom">
                 <div className="container">
                     <div className="row ">
                         <div className="col-xl-6 col-lg-6   " >
-                            <div className="p-0 ml-0 mr-0 md:ml-8 md:mr-8 lg:ml-8 lg:mr-8 xl:ml-10 xl:mr-10">
+                            <div className="margen">
                                 <div className="section-title mb-20 ">
                                     <h2 className="">Helping you comply with data privacy and protection</h2>
                                 </div>
@@ -18,8 +18,8 @@ const EbookForm = () => {
                             </div>
                         </div>
                         <div className=" col-xl-6 col-lg-6 ">
-                            <div className="container border border-dark bg-light">
-                                <div className="section-title  mt-4 mb-20">
+                            <div className="container border border-dark bg-light " style={{ 'padding': '10px' }}>
+                                <div className="section-title  text-center">
                                     <h2>Download the ebook</h2>
                                 </div>
                                 <div className=" ">

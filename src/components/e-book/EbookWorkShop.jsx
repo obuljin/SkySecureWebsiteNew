@@ -1,17 +1,19 @@
 import Image from 'next/image';
-import logo from '../../../public/assets/img/logo/logo.png';
+import logo from '../../../public/assets/img/logo/skylogo.png';
+import logo1 from '../../../public/assets/img/logo/logo.png';
+
 
 
 const EbookWorkShop = () => {
     return (
         <>
-            <div className="container " style={{ backgroundColor: "black" }}>
+            <div className="container-fluid " style={{ backgroundColor: "black" }}>
                 <div className="row ">
 
-                    <div className=" col-xl-7 col-lg-7 col-md-12 col-12  mt-30 mb-30  p-6" style={{
+                    <div className=" col-xl-12 col-lg-12 col-md-12 col-12  mt-30 mb-30  p-6" style={{
                         backgroundColor: "white",
-                        // borderTopRightRadius: "100px",
-                        // borderBottomRightRadius: "100px"
+                        borderTopRightRadius: "100px",
+                        borderBottomRightRadius: "100px"
 
 
                     }}>
@@ -21,17 +23,20 @@ const EbookWorkShop = () => {
                             </div>
                             <p className=" text-black">Start your journey to compliance with Skysecure. Using trial licenses from Microsoft, we’ll provide insights into your organization’s preparedness and recommend the initial steps on your DPDP journey.</p>
                             <div className="row align-items-center">
-                                <div className="col-xl-4 col-lg-4 col-md-4 col-4 mt-0 mb-10 ">
-                                    <Image src={logo} style={{ width: "100%", height: "auto" }} alt="about-img" />
+                                <div className="col-xl-2 col-lg-2 col-md-4 col-4  ">
+
+                                    <Image className='image-fluid' src={logo1} style={{ width: "100%", height: "auto" }} alt="about-img" />
+
                                 </div>
-                                <div className="col-xl-8 col-lg-8 col-md-8 col-8 mt-0 ">
+                                <div className="col-xl-10 col-lg-10 col-md-8 col-8  ">
                                     <h6>To take up this offer:</h6>
-                                    <p><span className="fw-bolder">Email:</span> Contact@skysecuretech.com <span className="fw-bolder">Phone:</span> (+91) 73533 55526</p>
+                                    <p><span className="fw-bolder">Email:</span> Contact@skysecuretech.com <br /> <span className="fw-bolder">Phone:</span> (+91) 73533 55526</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* <div className=" col-xl-1 col-lg-1   d-none  d-sm-none d-md-none d-lg-block mt-30 mb-30" style={{ backgroundColor: "white", borderRadius: "0 50% 50% 0" }}></div> */}
+                    {/* <div className=" col-xl-1 col-lg-1   d-none  d-sm-none d-md-none d-lg-block mt-30 mb-30" style={{ backgroundColor: "white", borderRadius: "0 50% 50% 0" }}></div>
+                     */}
                     <div className="col-xl-12 col-lg-12"></div>
                 </div>
             </div>

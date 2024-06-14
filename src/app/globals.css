@@ -3,129 +3,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 
-p{
-    text-align: justify !important;
+p {
+  text-align: justify !important;
 }
 
 
 /* Desktop View */
 @media (min-width: 992px) {
-    .sticky-col {
-      /* position: -webkit-sticky; */
-      position: sticky;
-      top: 120px;
-    }
-  }
-  
-  /* Mobile View */
-  @media (max-width: 991px) {
-    .sticky-col {
-      position: static;
-    }
+  .sticky-col {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 120px;
   }
 
-
-  .team-img {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    border-radius: 100px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+  .margen {
+    margin: 0px 30px;
   }
 
-  .text{
-    text-align: center;
-    padding:10px 0px;
+  .margin-top-bottom {
+    display: block;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 991px) {
+  .sticky-col {
+    position: static;
   }
 
-  .text h4{
-    color: #096bd8;
-    font-size: 22px;
+  .margin-top-bottom {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
+}
 
-  .text span{
-    font-size: 1rem;
-  }
 
-  .team-img img{
-    height: auto;
-    /* max-width: 100%; */
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
+.team-img {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 100px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .privacy{
-    text-align: justify !important;
-  }
-  .privacy ul li {
-    font-weight: 400 !important;
-  }
+.text {
+  text-align: center;
+  padding: 10px 0px;
+}
 
-  .career_detail p {
-    font-family: 'cerebri_sansbold' !important;
-  }
-  .career_detail ul li {
-    text-align: justify !important;
-    /* font-family: 'cerebri_sanssemibold' !important; */
-  }
+.text h4 {
+  color: #096bd8;
+  font-size: 22px;
+}
 
-  .terms{
-    text-align: justify !important;
-  }
-  .terms p {
-    margin-bottom: 0px !important;
-    font-weight: 100 !important;
-  }
-  .terms ul li {
-    font-weight: 400 !important;
-  }
+.text span {
+  font-size: 1rem;
+}
+
+.team-img img {
+  height: auto;
+  /* max-width: 100%; */
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.privacy {
+  text-align: justify !important;
+}
+
+.privacy ul li {
+  font-weight: 400 !important;
+}
+
+.career_detail p {
+  font-family: 'cerebri_sansbold' !important;
+}
+
+.career_detail ul li {
+  text-align: justify !important;
+  /* font-family: 'cerebri_sanssemibold' !important; */
+}
+
+.terms {
+  text-align: justify !important;
+}
+
+.terms p {
+  margin-bottom: 0px !important;
+  font-weight: 100 !important;
+}
+
+.terms ul li {
+  font-weight: 400 !important;
+}
+
+.newsletter-form .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #696969;
+}
+
+@media only screen and (max-width: 768px) {
   .newsletter-form .icon {
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
-    color: #696969; 
+    color: #696969;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .newsletter-form .icon {
-      position: absolute;
-      left: 10px;
-      top: 40%;
-      transform: translateY(-50%);
-      color: #696969;
-    }
+}
+
+@media only screen and (max-width: 480px) {
+  .newsletter-form .icon {
+    left: 5px;
+    top: 23%;
   }
-  
-  @media only screen and (max-width: 480px) {
-    .newsletter-form .icon {
-      left: 5px; 
-      top: 23%; 
-    }
-  }
-.about-2-img{
+}
+
+.about-2-img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.project-img img{
+
+.project-img img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.section-title span{
+
+.section-title span {
   color: blue;
 }
-.testimonial-text >div >svg{
+
+.testimonial-text>div>svg {
   width: 1em;
   height: 1em;
 }
-.textimonial-text-svg{
+
+.textimonial-text-svg {
   font-size: 22px;
   margin-right: 10px;
   margin-bottom: 1px;
@@ -134,40 +160,46 @@ p{
   border-color: '#096BD8';
 }
 
-.text{
+.text {
   height: 100px !important;
 }
-.testimonial-img img{
+
+.testimonial-img img {
   max-width: 100%;
-  height:auto;
+  height: auto;
   /* width: 400px; */
 }
 
 .project-text {
   position: absolute;
   border-radius: 10px;
- 
-  }
+
+}
+
 @media only screen and (max-width: 768px) {
-  
+
   .project-wrapper .project-text {
     opacity: 1;
   }
+
   .project-text {
     position: absolute;
     bottom: 10px;
-    top:10px;
-   
-    }
-  .project-wrapper .project-text h3{
+    top: 10px;
+
+  }
+
+  .project-wrapper .project-text h3 {
     font-size: 20px;
   }
-  .project-wrapper .project-text .btn-{
+
+  .project-wrapper .project-text .btn- {
     font-size: 16px;
     padding: 7px;
-  }}
-
-
-  .testi_img{
-    /* transform: scaleX(-1); */
   }
+}
+
+
+.testi_img {
+  /* transform: scaleX(-1); */
+}
