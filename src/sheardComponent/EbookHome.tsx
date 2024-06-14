@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ebookBaner from "../../public/assets/img/banner/banner1.png"
+import ebookBaner from "../../public/assets/img/banner/banner3.png"
 import Image from 'next/image';
 
 interface propsType {
@@ -10,6 +10,7 @@ interface propsType {
 const EbookHome = ({ pageTitle }: propsType) => {
 
 	return (
+
 
 		<div className="">
 

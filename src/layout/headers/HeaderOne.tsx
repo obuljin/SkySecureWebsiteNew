@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import logoImg from "../../../public/assets/img/logo/logo.png"
+import skylogo from "../../../public/assets/img/logo/skylogo.png"
 import Image from "next/image";
 import TopHeader from "./TopHeader";
 import { usePathname } from "next/navigation";
@@ -61,9 +62,9 @@ const HeaderOne = () => {
                 <div className="logo">
                   <Link href="/">
                     <Image
-                      src={logoImg}
-                      width={222}
-                      height={60}
+                      src={skylogo}
+                      // width={222}
+                      // height={60}
                       alt="flag"
                       style={{ width: "100%", height: "50px" }}
                     />
