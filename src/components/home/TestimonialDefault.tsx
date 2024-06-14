@@ -79,7 +79,7 @@ const TestimonialDefault = () => {
                 <div className="testimonial-text">
                   <p>{item.details}</p>
                   <h4 style={{fontSize:'26px'}}> {item.name} </h4>
-                  <span style={{textTransform:'lowercase'}}> {item.title} </span>
+                  <span style={{textTransform:'capitalize'}}> {item.title} </span>
                 </div>
               </div>
             </SwiperSlide>

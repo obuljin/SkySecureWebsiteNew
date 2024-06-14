@@ -51,9 +51,9 @@ const BlogGrid = () => {
                   </span>
                 </div>
                 <div className="blog-text">
-                  <h3>
+                  <h3 >
                     <Link href={`/blog-details/${item.id}`}>
-                      {item.title}
+                      <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}> {item.title}</span>
                     </Link>
                   </h3>
                   <p>
