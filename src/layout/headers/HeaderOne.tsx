@@ -62,7 +62,7 @@ const HeaderOne = () => {
                 <div className="logo">
                   <Link href="/">
                     <Image
-                      src={skylogo}
+                      src={logoImg}
                       // width={222}
                       // height={60}
                       alt="flag"
