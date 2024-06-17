@@ -25,6 +25,12 @@ p {
     margin-top: 120px;
     margin-bottom: 80px;
   }
+
+  .text-singleline {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 /* Mobile View */

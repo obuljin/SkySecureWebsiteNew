@@ -53,7 +53,9 @@ const BlogGrid = () => {
                 <div className="blog-text">
                   <h3 >
                     <Link href={`/blog-details/${item.id}`}>
-                      <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}> {item.title}</span>
+                      <span className="text-singleline" style={{}}> {item.title}</span>
+                      {/* whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%", maxWidth: "100%", cursor: "pointer"
+                     */}
                     </Link>
                   </h3>
                   <p>
